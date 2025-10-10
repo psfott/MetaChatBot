@@ -1,0 +1,13 @@
+lang: "en-US" # 中文
+
+server_type: "async"
+server_port: 8012 #  与UE通信端口，若修改UE中也需要修改
+
+emotion_type: "ChatGPT"
+force_generate: False # 强制重新生成动作
+
+#Audio2face "audio2face_headless.bat目录
+audio2face_path: "D:/Omniverse/pkg/deps/3757f0f707549e4cd2e0c789de84c010/"
+
+speech_recognition_type: "Azure Speech" # Azure识别语音
+speech_recognition_model_path: "F:/Model/hub/whisper/ggml-small.bin" # whisper模型地址，需要将speech_recognition_type修改为Whisper

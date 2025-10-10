@@ -1,0 +1,10 @@
+lang: "en-US" # 中文
+
+server_type: "async"
+server_port: 8012 #  与UE通信端口，若修改UE中也需要修改
+
+#Audio2face "audio2face_headless.bat目录
+audio2face_path: "C:/Users/admin/AppData/Local/ov/pkg/audio2face-2023.1.1"
+
+speech_recognition_type: "Azure Speech" # Azure识别语音
+speech_recognition_model_path: "F:/Model/hub/whisper/ggml-small.bin" # whisper模型地址，需要将speech_recognition_type修改为Whisper

@@ -1,0 +1,86 @@
+{
+  "happy": {
+    "questions": [
+      "Suppose you are talking to a friend who went hiking with his family and had fun.",
+      "Suppose you are talking to a friend who was so happy last the weekend.",
+      "Suppose you are talking to a friend who finally got a job after 4 months of going on interviews.",
+      "Suppose you are talking to a friend who received a car from his dad as a gift.",
+      "Suppose you are talking to a friend who are going to visit his grandmother today."
+    ],
+    "answers": [
+      "Sure, I will do my best. [neutral] Let's start! [joy]"
+    ]
+  },
+  "sad": {
+    "questions": [
+      "Suppose you are talking to a friend whose best friend moved away.",
+      "Suppose you are talking to a friend whose dog passed away and cried.",
+      "Suppose you are talking to a friend who got fired yesterday.",
+      "Suppose you are talking to a friend who had to leave home for college.",
+      "Suppose you are talking to a friend who didn't get into his first choice school."
+    ],
+    "answers": [
+      "Sure, I will do my best. [neutral] Let's start! [joy]"
+    ]
+  },
+  "angry": {
+    "questions": [
+      "Suppose you are talking to a friend whose neighbors were doing fireworks every night at midnight.",
+      "Suppose you are talking to a friend who failed at school",
+      "Suppose you are talking to a friend who got mad because he lost his dog.",
+      "Suppose you are talking to a friend whose cat vomited on his favorite shoes.",
+      "Suppose you are talking to a friend who was cheated by his friends."
+    ],
+    "answers": [
+      "Sure, I will do my best. [neutral] Let's start! [joy]"
+    ]
+  },
+  "scared": {
+    "questions": [
+      "Suppose you are talking to a friend who heard some weird bumping noises in his house last night.",
+      "Suppose you are talking to a friend who found a snake in my boot yesterday",
+      "Suppose you are talking to a friend who has big fear of dogs.",
+      "Suppose you are talking to a friend who heard a knock at his door late at night.",
+      "Suppose you are talking to a friend who suffered a big storm last night."
+    ],
+    "answers": [
+      "Sure, I will do my best. [neutral] Let's start! [joy]"
+    ]
+  },
+  "disgust": {
+    "questions": [
+      "Suppose you are talking to a friend who saw someone thrown up in the backseat.",
+      "Suppose you are talking to a friend who felt disgusted about eating bugs. ",
+      "Suppose you are talking to a friend who ordered a raw hamburger from a restaurant.",
+      "Suppose you are talking to a friend who stepped in some dog poop yesterday.",
+      "Suppose you are talking to a friend who saw a mouse in the kitchen."
+    ],
+    "answers": [
+      "Sure, I will do my best. [neutral] Let's start! [joy]"
+    ]
+  },
+   "surprised": {
+    "questions": [
+      "Suppose you are talking to a friend who was threw an awesome surprise party for birthday.",
+      "Suppose you are talking to a friend who won 100 dollars in the lottery.",
+      "Suppose you are talking to a friend who did great on his test.",
+      "Suppose you are talking to a friend who got a unexpected delivery.",
+      "Suppose you are talking to a friend whose friends put together for his graduation."
+    ],
+    "answers": [
+      "Sure, I will do my best. [neutral] Let's start! [joy]"
+    ]
+  },
+  "neutral": {
+    "questions": [
+      "Suppose you are talking to a friend about the homework.",
+      "Suppose you are talking to a friend about weekend plan.",
+      "Suppose you are talking to a friend about coming exam.",
+      "Suppose you are talking to a friend about lunch.",
+      "Suppose you are talking to a friend about movies recently watched."
+    ],
+    "answers": [
+      "Sure, I will do my best. [neutral] Let's start! [joy]"
+    ]
+  }
+}

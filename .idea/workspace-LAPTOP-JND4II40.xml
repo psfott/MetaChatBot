@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5c48603b-8c2c-4849-b1b9-3d1fd6273011" name="更改" comment="新增blendshape支持">
+      <change afterPath="$PROJECT_DIR$/test/blendshape/blender_renders/S1E17_332.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/blendshape/blender_renders/S1E1_117.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/blendshape/blender_renders/S1E1_392.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/blendshape/blender_renders/S1E3_29.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/blendshape/blendshape_names.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/call_render.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/render.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio/answer1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/audio/answer1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio/prepare.wav" beforeDir="false" afterPath="$PROJECT_DIR$/audio/prepare.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio/temp/audio_clip10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio/temp/audio_clip2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/audio/temp/audio_clip2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio/temp/audio_clip3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio/temp/audio_clip4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio/temp/audio_clip5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio/temp/audio_clip6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio/temp/audio_clip8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio/temp/audio_clip9.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gesture/prepare.bvh" beforeDir="false" afterPath="$PROJECT_DIR$/gesture/prepare.bvh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gesture/temp/audio_clip1.bvh" beforeDir="false" afterPath="$PROJECT_DIR$/gesture/temp/audio_clip1.bvh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gesture/temp/audio_clip2.bvh" beforeDir="false" afterPath="$PROJECT_DIR$/gesture/temp/audio_clip2.bvh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gesture/temp/audio_clip3.bvh" beforeDir="false" afterPath="$PROJECT_DIR$/gesture/temp/audio_clip3.bvh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gesture/temp/audio_clip5.bvh" beforeDir="false" afterPath="$PROJECT_DIR$/gesture/temp/audio_clip5.bvh" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="32264d326f972c18a3b016a5fb74548444a4ec2a" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;pitbullcty&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/pitbullcty/MetaChatBot.git&quot;,
+    &quot;accountId&quot;: &quot;1371461d-ae5a-45b1-83c7-95e30512428e&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/.conda/envs/MetaChatBot/Lib/site-packages/pycaw/utils.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$USER_HOME$/.conda/envs/MetaChatBot/Lib/wave.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$USER_HOME$/AppData/Local/Programs/Python/Python311/Lib/site-packages/requests/models.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/speech2gesture/gesture_generator.py" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2Xvmo5kVaNWy9zGJuXd4j7xpyhc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.async_server.executor&quot;: &quot;Run&quot;,
+    &quot;Python.audio2face.executor&quot;: &quot;Run&quot;,
+    &quot;Python.azure_speech.executor&quot;: &quot;Run&quot;,
+    &quot;Python.base_chat.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.bvh.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bvh_loader.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.call_render.executor&quot;: &quot;Run&quot;,
+    &quot;Python.chat_glm.executor&quot;: &quot;Run&quot;,
+    &quot;Python.chat_impl.executor&quot;: &quot;Run&quot;,
+    &quot;Python.chatgpt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.emotion_classifier.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gesture_generator.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.llama_cpp_chat.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.main_matplot.executor&quot;: &quot;Run&quot;,
+    &quot;Python.onnx_converter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.op_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.openai_whisper (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.paddle_speech.executor&quot;: &quot;Run&quot;,
+    &quot;Python.python -m fastchat.serve.cli --model-path lmsys/vicuna-7b-v1.5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.python -m fastchat.serve.controller.executor&quot;: &quot;Run&quot;,
+    &quot;Python.server (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.server.executor&quot;: &quot;Run&quot;,
+    &quot;Python.soundfile.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.streaming_main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_blend_shape.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_client.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_jit.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_live_link.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.test_mediapipe.executor&quot;: &quot;Run&quot;,
+    &quot;Python.transcribe.executor&quot;: &quot;Run&quot;,
+    &quot;Python.wave.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.whisper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.whisper_cpp.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;zh__CN&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pitbull/OneDrive/Python Programs/MetaChatBot/test/blendshape&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.debugger.dataview.coloredbydefault&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;PyScientificConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pitbull\OneDrive\Python Programs\MetaChatBot\test\blendshape" />
+      <recent name="C:\Users\pitbull\OneDrive\Python Programs\MetaChatBot\speech2gesture\data\clean" />
+      <recent name="C:\Users\pitbull\OneDrive\Python Programs\MetaChatBot\model" />
+      <recent name="C:\Users\pitbull\OneDrive\Python Programs\MetaChatBot\test" />
+      <recent name="C:\Users\pitbull\OneDrive\Python Programs\MetaChatBot\audio" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pitbull\OneDrive\Python Programs\MetaChatBot\test\blendshape\convert_video\shelton" />
+      <recent name="C:\Users\pitbull\OneDrive\Python Programs\MetaChatBot\test\blendshape" />
+      <recent name="C:\Users\pitbull\OneDrive\Python Programs\MetaChatBot" />
+      <recent name="C:\Users\pitbull\OneDrive\Python Programs\MetaChatBot\test" />
+      <recent name="C:\Users\pitbull\OneDrive\Python Programs\MetaChatBot\audio\test" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <myKeys>
+      <visibility group="Grunt" flag="true" />
+      <visibility group="Gulp" flag="true" />
+      <visibility group="HTTP 请求" flag="true" />
+      <visibility group="Node.js" flag="true" />
+      <visibility group="Run Python file" flag="true" />
+      <visibility group="Run conda command" flag="true" />
+      <visibility group="Run pip command" flag="true" />
+      <visibility group="npm" flag="true" />
+      <visibility group="yarn" flag="true" />
+      <visibility group="最近的项目" flag="true" />
+      <visibility group="运行配置" flag="true" />
+    </myKeys>
+  </component>
+  <component name="RunManager" selected="Python.call_render">
+    <configuration name="audio2face" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MetaChatBot" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/audio2face.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="call_render" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MetaChatBot" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/call_render.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="MetaChatBot" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="streaming_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MetaChatBot" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/streaming_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_blend_shape" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MetaChatBot" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test_blend_shape.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_client" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="MetaChatBot" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/streaming_server" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/streaming_server/test_client.py" />
+      <option name="PARAMETERS" value="../audio/test.wav /World/audio2face/PlayerStreaming" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_mediapipe" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MetaChatBot" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test_mediapipe.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.test_client" />
+      <item itemvalue="Python.call_render" />
+      <item itemvalue="Python.test_mediapipe" />
+      <item itemvalue="Python.audio2face" />
+      <item itemvalue="Python.test_blend_shape" />
+      <item itemvalue="Python.streaming_main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.call_render" />
+        <item itemvalue="Python.streaming_main" />
+        <item itemvalue="Python.test_blend_shape" />
+        <item itemvalue="Python.test_mediapipe" />
+        <item itemvalue="Python.audio2face" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-PY-241.14494.241" />
+        <option value="bundled-python-sdk-0509580d9d50-28c9f5db9ffe-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.14494.241" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="5c48603b-8c2c-4849-b1b9-3d1fd6273011" name="更改" comment="" />
+      <created>1699518099623</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699518099623</updated>
+      <workItem from="1699518100817" duration="16000" />
+      <workItem from="1699518541080" duration="967000" />
+      <workItem from="1699519703332" duration="4160000" />
+      <workItem from="1699581778283" duration="13247000" />
+      <workItem from="1699955279495" duration="39000" />
+      <workItem from="1700032972315" duration="10391000" />
+      <workItem from="1700045641401" duration="6420000" />
+      <workItem from="1700052397540" duration="168000" />
+      <workItem from="1700053475318" duration="1797000" />
+      <workItem from="1700055361792" duration="190000" />
+      <workItem from="1700055561425" duration="894000" />
+      <workItem from="1700056479508" duration="94000" />
+      <workItem from="1700097753353" duration="4828000" />
+      <workItem from="1700102627262" duration="3754000" />
+      <workItem from="1700112080686" duration="852000" />
+      <workItem from="1700123877863" duration="1827000" />
+      <workItem from="1700125765802" duration="1110000" />
+      <workItem from="1700126932819" duration="857000" />
+      <workItem from="1700185018607" duration="3059000" />
+      <workItem from="1700188113714" duration="200000" />
+      <workItem from="1700651839406" duration="1434000" />
+      <workItem from="1700653341729" duration="229000" />
+      <workItem from="1700658749399" duration="659000" />
+      <workItem from="1700789775019" duration="345000" />
+      <workItem from="1700790130895" duration="21576000" />
+      <workItem from="1701072740682" duration="131000" />
+      <workItem from="1701331322600" duration="6137000" />
+      <workItem from="1701395418634" duration="7565000" />
+      <workItem from="1701404236117" duration="7044000" />
+      <workItem from="1701417610281" duration="3416000" />
+      <workItem from="1701423334020" duration="869000" />
+      <workItem from="1701432622895" duration="1524000" />
+      <workItem from="1701436512481" duration="1536000" />
+      <workItem from="1701682717672" duration="26000" />
+      <workItem from="1701682924866" duration="92000" />
+      <workItem from="1701683027907" duration="183000" />
+      <workItem from="1701739296852" duration="713000" />
+      <workItem from="1701740052805" duration="82000" />
+      <workItem from="1701745433570" duration="587000" />
+      <workItem from="1701746883325" duration="1868000" />
+      <workItem from="1701762008239" duration="472000" />
+      <workItem from="1701767346357" duration="644000" />
+      <workItem from="1701912959049" duration="366000" />
+      <workItem from="1701913624529" duration="13767000" />
+      <workItem from="1701938475461" duration="47000" />
+      <workItem from="1702025694780" duration="2013000" />
+      <workItem from="1702027912375" duration="26000" />
+      <workItem from="1702365917529" duration="85000" />
+      <workItem from="1702379094902" duration="232000" />
+      <workItem from="1702430795078" duration="515000" />
+      <workItem from="1702475872265" duration="115000" />
+      <workItem from="1702543435475" duration="12069000" />
+      <workItem from="1702603705193" duration="12715000" />
+      <workItem from="1702632836569" duration="179000" />
+      <workItem from="1702865238936" duration="610000" />
+      <workItem from="1703069167672" duration="7851000" />
+      <workItem from="1703077174512" duration="1810000" />
+      <workItem from="1703123006247" duration="9267000" />
+      <workItem from="1703147301557" duration="1176000" />
+      <workItem from="1703161587565" duration="1160000" />
+      <workItem from="1703163508286" duration="604000" />
+      <workItem from="1703208948002" duration="7041000" />
+      <workItem from="1703216198268" duration="11366000" />
+      <workItem from="1703237338042" duration="1148000" />
+      <workItem from="1703250987506" duration="2587000" />
+      <workItem from="1703468928056" duration="10000" />
+      <workItem from="1703646025263" duration="4107000" />
+      <workItem from="1703650265472" duration="446000" />
+      <workItem from="1703659901040" duration="6116000" />
+      <workItem from="1703668192113" duration="5619000" />
+      <workItem from="1703676019025" duration="2766000" />
+      <workItem from="1703752971196" duration="12000" />
+      <workItem from="1704456903907" duration="1249000" />
+      <workItem from="1704871306771" duration="2366000" />
+      <workItem from="1704939497170" duration="15371000" />
+      <workItem from="1704972409246" duration="10584000" />
+      <workItem from="1705023099285" duration="17028000" />
+      <workItem from="1705282422524" duration="2000" />
+      <workItem from="1705282487755" duration="25000" />
+      <workItem from="1705282521419" duration="2703000" />
+      <workItem from="1705311755873" duration="970000" />
+      <workItem from="1705384533012" duration="3113000" />
+      <workItem from="1705387912815" duration="621000" />
+      <workItem from="1705389503922" duration="90000" />
+      <workItem from="1705456007215" duration="2973000" />
+      <workItem from="1705459289992" duration="22250000" />
+      <workItem from="1705541654361" duration="27272000" />
+      <workItem from="1705585934392" duration="5724000" />
+      <workItem from="1705631901385" duration="1358000" />
+      <workItem from="1705661248715" duration="88000" />
+      <workItem from="1705890866379" duration="37000" />
+      <workItem from="1705911779949" duration="16349000" />
+      <workItem from="1705974895516" duration="17335000" />
+      <workItem from="1706060995626" duration="12221000" />
+      <workItem from="1706147303035" duration="6898000" />
+      <workItem from="1706191267028" duration="979000" />
+      <workItem from="1706234921416" duration="4526000" />
+      <workItem from="1706246287822" duration="64000" />
+      <workItem from="1706260752276" duration="19359000" />
+      <workItem from="1706287449400" duration="29363000" />
+      <workItem from="1706351754888" duration="2857000" />
+      <workItem from="1706359677536" duration="4393000" />
+      <workItem from="1706412159451" duration="4809000" />
+      <workItem from="1706453338299" duration="1269000" />
+      <workItem from="1706454726593" duration="3920000" />
+      <workItem from="1706493733034" duration="5297000" />
+      <workItem from="1706499093116" duration="359000" />
+      <workItem from="1706499587156" duration="23394000" />
+      <workItem from="1706537308615" duration="5309000" />
+      <workItem from="1706542656809" duration="307000" />
+      <workItem from="1706577173007" duration="2664000" />
+      <workItem from="1706579859822" duration="25350000" />
+      <workItem from="1706621436802" duration="3851000" />
+      <workItem from="1706664127016" duration="7809000" />
+      <workItem from="1706671990129" duration="2406000" />
+      <workItem from="1706677837309" duration="8894000" />
+      <workItem from="1706693393939" duration="9460000" />
+      <workItem from="1706753013743" duration="1512000" />
+      <workItem from="1706771243235" duration="2803000" />
+      <workItem from="1706778728123" duration="3650000" />
+      <workItem from="1706791358934" duration="11312000" />
+      <workItem from="1706864101480" duration="59000" />
+      <workItem from="1707019329477" duration="250000" />
+      <workItem from="1707019760376" duration="33000" />
+      <workItem from="1707192502174" duration="142000" />
+      <workItem from="1707300254684" duration="604000" />
+      <workItem from="1708138550500" duration="41000" />
+      <workItem from="1708163644534" duration="14000" />
+      <workItem from="1708317633017" duration="29000" />
+      <workItem from="1708652179604" duration="819000" />
+      <workItem from="1708655248534" duration="945000" />
+      <workItem from="1708681317063" duration="10397000" />
+      <workItem from="1708830320245" duration="3927000" />
+      <workItem from="1708913913045" duration="5093000" />
+      <workItem from="1708957427868" duration="5620000" />
+      <workItem from="1709085557802" duration="45000" />
+      <workItem from="1709085725885" duration="630000" />
+      <workItem from="1709086372194" duration="248000" />
+      <workItem from="1709170773912" duration="1968000" />
+      <workItem from="1709256979248" duration="144000" />
+      <workItem from="1709257275203" duration="41000" />
+      <workItem from="1709474907990" duration="191000" />
+      <workItem from="1709479183275" duration="636000" />
+      <workItem from="1709540902786" duration="3078000" />
+      <workItem from="1709550809838" duration="631000" />
+      <workItem from="1709631414395" duration="1438000" />
+      <workItem from="1709639800476" duration="2175000" />
+      <workItem from="1709688434488" duration="1137000" />
+      <workItem from="1709690228729" duration="596000" />
+      <workItem from="1709707005517" duration="538000" />
+      <workItem from="1709775276570" duration="8440000" />
+      <workItem from="1709860615299" duration="1934000" />
+      <workItem from="1709864156070" duration="2913000" />
+      <workItem from="1709951862008" duration="77000" />
+      <workItem from="1710122167627" duration="367000" />
+      <workItem from="1710141250898" duration="7861000" />
+      <workItem from="1710156110662" duration="9256000" />
+      <workItem from="1710314724554" duration="50000" />
+      <workItem from="1710343426910" duration="2074000" />
+      <workItem from="1710642850172" duration="377000" />
+      <workItem from="1710643649045" duration="1582000" />
+      <workItem from="1710726357689" duration="5506000" />
+      <workItem from="1710746720450" duration="2025000" />
+      <workItem from="1710764091738" duration="957000" />
+      <workItem from="1710766350119" duration="2004000" />
+      <workItem from="1710856110009" duration="5316000" />
+      <workItem from="1710861659495" duration="50000" />
+      <workItem from="1710906143593" duration="94000" />
+      <workItem from="1710906333342" duration="188000" />
+      <workItem from="1711501888324" duration="185000" />
+      <workItem from="1711677098482" duration="104000" />
+      <workItem from="1711677625616" duration="56000" />
+      <workItem from="1713356916351" duration="1009000" />
+      <workItem from="1713954824431" duration="4106000" />
+      <workItem from="1714015621523" duration="23000" />
+      <workItem from="1716187544083" duration="6007000" />
+      <workItem from="1716193739717" duration="4976000" />
+      <workItem from="1716207939098" duration="13000" />
+      <workItem from="1716274275641" duration="9145000" />
+      <workItem from="1716340254164" duration="1627000" />
+      <workItem from="1716343637067" duration="18000" />
+      <workItem from="1716517957702" duration="8865000" />
+      <workItem from="1716541354642" duration="1368000" />
+      <workItem from="1716542748223" duration="6745000" />
+      <workItem from="1716552722957" duration="8000" />
+      <workItem from="1716777063602" duration="1588000" />
+      <workItem from="1716793663579" duration="4599000" />
+      <workItem from="1716798310438" duration="5572000" />
+      <workItem from="1716805862959" duration="14768000" />
+      <workItem from="1716862630191" duration="710000" />
+      <workItem from="1716880452283" duration="29340000" />
+      <workItem from="1716954042024" duration="4986000" />
+      <workItem from="1716964594593" duration="1559000" />
+      <workItem from="1716966601512" duration="1658000" />
+      <workItem from="1716968337222" duration="6775000" />
+      <workItem from="1716986799131" duration="781000" />
+      <workItem from="1717035097680" duration="626000" />
+      <workItem from="1717119528679" duration="2740000" />
+      <workItem from="1717122297771" duration="4081000" />
+      <workItem from="1717126412667" duration="503000" />
+      <workItem from="1717126998755" duration="3474000" />
+      <workItem from="1717134561604" duration="8062000" />
+      <workItem from="1717144184350" duration="1136000" />
+      <workItem from="1717149016406" duration="1180000" />
+      <workItem from="1717214690694" duration="16000" />
+      <workItem from="1717405553955" duration="23000" />
+      <workItem from="1717466789777" duration="43000" />
+      <workItem from="1717550167610" duration="46954000" />
+      <workItem from="1717658795861" duration="7984000" />
+      <workItem from="1717666854263" duration="327000" />
+      <workItem from="1717667199653" duration="11544000" />
+      <workItem from="1717723107228" duration="318000" />
+      <workItem from="1717723689957" duration="13086000" />
+      <workItem from="1718089655002" duration="17205000" />
+      <workItem from="1718110038288" duration="828000" />
+      <workItem from="1718157493533" duration="12193000" />
+      <workItem from="1718178586641" duration="278000" />
+      <workItem from="1718182500930" duration="1011000" />
+      <workItem from="1718183630551" duration="2492000" />
+      <workItem from="1718189129058" duration="1843000" />
+      <workItem from="1718355562022" duration="3114000" />
+      <workItem from="1718627189607" duration="605000" />
+      <workItem from="1718694754564" duration="701000" />
+      <workItem from="1718714063242" duration="73000" />
+      <workItem from="1718869490548" duration="592000" />
+      <workItem from="1719194020898" duration="660000" />
+      <workItem from="1719197749191" duration="604000" />
+      <workItem from="1719230813667" duration="4125000" />
+      <workItem from="1719279645009" duration="439000" />
+      <workItem from="1719280236850" duration="2252000" />
+      <workItem from="1719282769496" duration="3109000" />
+      <workItem from="1719285939068" duration="1072000" />
+      <workItem from="1719287334729" duration="71000" />
+      <workItem from="1719287873865" duration="137000" />
+      <workItem from="1719384590305" duration="1027000" />
+      <workItem from="1719824837387" duration="5310000" />
+      <workItem from="1719836831528" duration="2207000" />
+      <workItem from="1719840224387" duration="75000" />
+      <workItem from="1719900302907" duration="428000" />
+      <workItem from="1719901296904" duration="2918000" />
+      <workItem from="1719904300823" duration="2421000" />
+      <workItem from="1719991926010" duration="7693000" />
+      <workItem from="1720007390858" duration="1418000" />
+      <workItem from="1720056580956" duration="931000" />
+      <workItem from="1720057534413" duration="6374000" />
+      <workItem from="1720065150970" duration="73000" />
+      <workItem from="1720268511881" duration="87000" />
+      <workItem from="1720402600370" duration="2568000" />
+      <workItem from="1720407093564" duration="9000" />
+      <workItem from="1720518165024" duration="9603000" />
+      <workItem from="1720576694375" duration="5324000" />
+      <workItem from="1720583594369" duration="21423000" />
+      <workItem from="1720625069139" duration="412000" />
+      <workItem from="1720661564077" duration="7433000" />
+    </task>
+    <task id="LOCAL-00035" summary="优化完成,bug修复">
+      <option name="closed" value="true" />
+      <created>1706623393199</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1706623393199</updated>
+    </task>
+    <task id="LOCAL-00036" summary="jit优化不明显">
+      <option name="closed" value="true" />
+      <created>1706670049642</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1706670049643</updated>
+    </task>
+    <task id="LOCAL-00037" summary="jit优化">
+      <option name="closed" value="true" />
+      <created>1706670804563</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1706670804563</updated>
+    </task>
+    <task id="LOCAL-00038" summary="修复blocking bug">
+      <option name="closed" value="true" />
+      <created>1706674363005</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1706674363005</updated>
+    </task>
+    <task id="LOCAL-00039" summary="异步播放完成">
+      <option name="closed" value="true" />
+      <created>1706706301224</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1706706301224</updated>
+    </task>
+    <task id="LOCAL-00040" summary="更新细节等级，后续考虑流式输出接入live link.">
+      <option name="closed" value="true" />
+      <created>1706757085747</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1706757085747</updated>
+    </task>
+    <task id="LOCAL-00041" summary="更新细节等级，bugfix,后续考虑流式输出">
+      <option name="closed" value="true" />
+      <created>1706772119419</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1706772119419</updated>
+    </task>
+    <task id="LOCAL-00042" summary="加速语音获取,后续考虑流式输出">
+      <option name="closed" value="true" />
+      <created>1706782182323</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1706782182323</updated>
+    </task>
+    <task id="LOCAL-00043" summary="重构代码，提供三种处理方式">
+      <option name="closed" value="true" />
+      <created>1706801687560</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1706801687560</updated>
+    </task>
+    <task id="LOCAL-00044" summary="重构代码，提供三种处理方式">
+      <option name="closed" value="true" />
+      <created>1706801957696</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1706801957696</updated>
+    </task>
+    <task id="LOCAL-00045" summary="重构代码，提供三种处理方式">
+      <option name="closed" value="true" />
+      <created>1706801984773</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1706801984773</updated>
+    </task>
+    <task id="LOCAL-00046" summary="添加实验条件">
+      <option name="closed" value="true" />
+      <created>1708689286833</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1708689286833</updated>
+    </task>
+    <task id="LOCAL-00047" summary="新增实验条件">
+      <option name="closed" value="true" />
+      <created>1708693044363</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1708693044363</updated>
+    </task>
+    <task id="LOCAL-00048" summary="新增实验条件">
+      <option name="closed" value="true" />
+      <created>1708695605976</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1708695605976</updated>
+    </task>
+    <task id="LOCAL-00049" summary="新增对话背景修改">
+      <option name="closed" value="true" />
+      <created>1708834368929</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1708834368929</updated>
+    </task>
+    <task id="LOCAL-00050" summary="新增对话，语音记录，提供了强制制定标签">
+      <option name="closed" value="true" />
+      <created>1708919005678</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1708919005678</updated>
+    </task>
+    <task id="LOCAL-00051" summary="新增从音频提取对话,识别单句话Bug待修复">
+      <option name="closed" value="true" />
+      <created>1708963046310</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1708963046311</updated>
+    </task>
+    <task id="LOCAL-00052" summary="预先播放音频，动作">
+      <option name="closed" value="true" />
+      <created>1709543947759</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1709543947759</updated>
+    </task>
+    <task id="LOCAL-00053" summary="音频文本提取完毕">
+      <option name="closed" value="true" />
+      <created>1709782035261</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1709782035261</updated>
+    </task>
+    <task id="LOCAL-00054" summary="新增happy">
+      <option name="closed" value="true" />
+      <created>1710154312554</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1710154312555</updated>
+    </task>
+    <task id="LOCAL-00055" summary="新增happy">
+      <option name="closed" value="true" />
+      <created>1710156075519</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1710156075519</updated>
+    </task>
+    <task id="LOCAL-00056" summary="更新场景记录">
+      <option name="closed" value="true" />
+      <created>1710165362656</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1710165362657</updated>
+    </task>
+    <task id="LOCAL-00057" summary="添加condition文件">
+      <option name="closed" value="true" />
+      <created>1710345478449</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1710345478450</updated>
+    </task>
+    <task id="LOCAL-00058" summary="修复实验条件bug">
+      <option name="closed" value="true" />
+      <created>1710861149294</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1710861149295</updated>
+    </task>
+    <task id="LOCAL-00059" summary="中文移植完成">
+      <option name="closed" value="true" />
+      <created>1716284227219</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1716284227220</updated>
+    </task>
+    <task id="LOCAL-00060" summary="本地chatglm">
+      <option name="closed" value="true" />
+      <created>1716799589596</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1716799589596</updated>
+    </task>
+    <task id="LOCAL-00061" summary="流式语音相应">
+      <option name="closed" value="true" />
+      <created>1716888348436</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1716888348436</updated>
+    </task>
+    <task id="LOCAL-00062" summary="流式文字输出，合成待优化">
+      <option name="closed" value="true" />
+      <created>1716903995455</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1716903995455</updated>
+    </task>
+    <task id="LOCAL-00063" summary="流式输出，动画生成需要优化">
+      <option name="closed" value="true" />
+      <created>1716972015860</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1716972015861</updated>
+    </task>
+    <task id="LOCAL-00064" summary="优化语音合成速度">
+      <option name="closed" value="true" />
+      <created>1716974999104</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1716974999104</updated>
+    </task>
+    <task id="LOCAL-00065" summary="优化语音识别速度，gesture生成待优化">
+      <option name="closed" value="true" />
+      <created>1717122370932</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1717122370933</updated>
+    </task>
+    <task id="LOCAL-00066" summary="bug fix 进一步优化">
+      <option name="closed" value="true" />
+      <created>1717127141637</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1717127141638</updated>
+    </task>
+    <task id="LOCAL-00067" summary="bug fix 进一步优化">
+      <option name="closed" value="true" />
+      <created>1717128967739</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1717128967739</updated>
+    </task>
+    <task id="LOCAL-00068" summary="修改gesture streaming推理生成json">
+      <option name="closed" value="true" />
+      <created>1717594763275</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1717594763275</updated>
+    </task>
+    <task id="LOCAL-00069" summary="流式测试成功">
+      <option name="closed" value="true" />
+      <created>1717661230229</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1717661230229</updated>
+    </task>
+    <task id="LOCAL-00070" summary="优化流式推理，整合">
+      <option name="closed" value="true" />
+      <created>1717680286396</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1717680286397</updated>
+    </task>
+    <task id="LOCAL-00071" summary="优化流式推理，整合">
+      <option name="closed" value="true" />
+      <created>1717736492976</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1717736492977</updated>
+    </task>
+    <task id="LOCAL-00072" summary="优化流式推理， 播放同步需解决">
+      <option name="closed" value="true" />
+      <created>1717736539586</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1717736539587</updated>
+    </task>
+    <task id="LOCAL-00073" summary="增加播放检测">
+      <option name="closed" value="true" />
+      <created>1718095152581</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1718095152581</updated>
+    </task>
+    <task id="LOCAL-00074" summary="增加whisper本地检测">
+      <option name="closed" value="true" />
+      <created>1718178289487</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1718178289487</updated>
+    </task>
+    <task id="LOCAL-00075" summary="增加人声检测">
+      <option name="closed" value="true" />
+      <created>1718189522026</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1718189522026</updated>
+    </task>
+    <task id="LOCAL-00076" summary="修改配置文件，新增小部分数据集">
+      <option name="closed" value="true" />
+      <created>1719233880993</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1719233880993</updated>
+    </task>
+    <task id="LOCAL-00077" summary="修改配置文件，新增小部分数据集">
+      <option name="closed" value="true" />
+      <created>1719233911544</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1719233911544</updated>
+    </task>
+    <task id="LOCAL-00078" summary="优化，新增配置文件启动">
+      <option name="closed" value="true" />
+      <created>1719285609594</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1719285609595</updated>
+    </task>
+    <task id="LOCAL-00079" summary="修复表情bug，新增端口冲突检测">
+      <option name="closed" value="true" />
+      <created>1719906704263</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1719906704264</updated>
+    </task>
+    <task id="LOCAL-00080" summary="bug fix,新增屏蔽词">
+      <option name="closed" value="true" />
+      <created>1719996327243</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1719996327244</updated>
+    </task>
+    <task id="LOCAL-00081" summary="协程改写服务器，增加性能">
+      <option name="closed" value="true" />
+      <created>1719998580493</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1719998580493</updated>
+    </task>
+    <task id="LOCAL-00082" summary="修改bug，更好多语言支持">
+      <option name="closed" value="true" />
+      <created>1720063888863</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1720063888863</updated>
+    </task>
+    <task id="LOCAL-00083" summary="新增blendshape支持">
+      <option name="closed" value="true" />
+      <created>1720625096625</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1720625096626</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="更新场景记录" />
+    <MESSAGE value="添加condition文件" />
+    <MESSAGE value="修复实验条件bug" />
+    <MESSAGE value="中文移植完成" />
+    <MESSAGE value="本地chatglm" />
+    <MESSAGE value="流式语音相应" />
+    <MESSAGE value="流式文字输出，合成待优化" />
+    <MESSAGE value="流式输出，动画生成需要优化" />
+    <MESSAGE value="优化语音合成速度" />
+    <MESSAGE value="优化语音识别速度，gesture生成待优化" />
+    <MESSAGE value="bug fix 进一步优化" />
+    <MESSAGE value="修改gesture streaming推理生成json" />
+    <MESSAGE value="流式测试成功" />
+    <MESSAGE value="优化流式推理，整合" />
+    <MESSAGE value="优化流式推理， 播放同步需解决" />
+    <MESSAGE value="增加播放检测" />
+    <MESSAGE value="增加whisper本地检测" />
+    <MESSAGE value="增加人声检测" />
+    <MESSAGE value="修改配置文件，新增小部分数据集" />
+    <MESSAGE value="优化，新增配置文件启动" />
+    <MESSAGE value="修复表情bug，新增端口冲突检测" />
+    <MESSAGE value="bug fix,新增屏蔽词" />
+    <MESSAGE value="协程改写服务器，增加性能" />
+    <MESSAGE value="修改bug，更好多语言支持" />
+    <MESSAGE value="新增blendshape支持" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增blendshape支持" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MetaChatBot$gesture_generator.coverage" NAME="gesture_generator 覆盖结果" MODIFIED="1718104622951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/speech2gesture" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$whisper.coverage" NAME="whisper 覆盖结果" MODIFIED="1718095829624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$async_server.coverage" NAME="async_server 覆盖结果" MODIFIED="1719998069751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$main.coverage" NAME="main 覆盖结果" MODIFIED="1717665639662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$main_matplot.coverage" NAME="main_matplot 覆盖结果" MODIFIED="1717576650675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$openai_whisper__1_.coverage" NAME="openai_whisper (1) 覆盖结果" MODIFIED="1718097311752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$call_render.coverage" NAME="call_render 覆盖结果" MODIFIED="1720668156153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$soundfile.coverage" NAME="soundfile 覆盖结果" MODIFIED="1716816188494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/.conda/envs/MetaChatBot/Lib/site-packages" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$streaming_main.coverage" NAME="streaming_main 覆盖结果" MODIFIED="1720667757614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$transcribe.coverage" NAME="transcribe 覆盖结果" MODIFIED="1718095697041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/.conda/envs/MetaChatBot/Lib/site-packages/faster_whisper" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$azure_speech.coverage" NAME="azure_speech 覆盖结果" MODIFIED="1718357053564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$chat_glm.coverage" NAME="chat_glm 覆盖结果" MODIFIED="1719839030135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$server.coverage" NAME="server 覆盖结果" MODIFIED="1719997910547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$chat_impl.coverage" NAME="chat_impl 覆盖结果" MODIFIED="1716519471245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$onnx_converter.coverage" NAME="onnx_converter 覆盖结果" MODIFIED="1706267967748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/speech2gesture" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$base_chat.coverage" NAME="base_chat 覆盖结果" MODIFIED="1717123729699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$bvh_loader.coverage" NAME="bvh_loader 覆盖结果" MODIFIED="1706541165727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/speech2gesture" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$python__m_fastchat_serve_cli___model_path_lmsys_vicuna_7b_v1_5.coverage" NAME="python -m fastchat.serve.cli --model-path lmsys/vicuna-7b-v1.5 覆盖结果" MODIFIED="1705982792793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$test_live_link.coverage" NAME="test_live_link 覆盖结果" MODIFIED="1717736065466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$server__1_.coverage" NAME="server (1) 覆盖结果" MODIFIED="1719997883580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$audio2face.coverage" NAME="audio2face 覆盖结果" MODIFIED="1720601494508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$whisper_cpp.coverage" NAME="whisper_cpp 覆盖结果" MODIFIED="1720057304595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$test_mediapipe.coverage" NAME="test_mediapipe 覆盖结果" MODIFIED="1720614728262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$paddle_speech.coverage" NAME="paddle_speech 覆盖结果" MODIFIED="1718109756961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$data.coverage" NAME="data 覆盖结果" MODIFIED="1703071256779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$python__m_fastchat_serve_controller.coverage" NAME="python -m fastchat.serve.controller 覆盖结果" MODIFIED="1704972004162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$llama_cpp_chat.coverage" NAME="llama_cpp_chat 覆盖结果" MODIFIED="1716889160042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$test_client.coverage" NAME="test_client 覆盖结果" MODIFIED="1716820592299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/streaming_server" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$emotion_classifier.coverage" NAME="emotion_classifier 覆盖结果" MODIFIED="1716520565444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$chatgpt.coverage" NAME="chatgpt 覆盖结果" MODIFIED="1704941974862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$bvh.coverage" NAME="bvh 覆盖结果" MODIFIED="1706497670782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/speech2gesture/anim" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$op_test.coverage" NAME="op_test 覆盖结果" MODIFIED="1706330105880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/speech2gesture" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$wave.coverage" NAME="wave 覆盖结果" MODIFIED="1716816582143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/.conda/envs/MetaChatBot/Lib" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$test_jit.coverage" NAME="test_jit 覆盖结果" MODIFIED="1719999177849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/MetaChatBot$test_blend_shape.coverage" NAME="test_blend_shape 覆盖结果" MODIFIED="1720617654276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+  </component>
+</project>

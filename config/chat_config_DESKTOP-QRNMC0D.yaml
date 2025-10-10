@@ -1,0 +1,25 @@
+speech_type: 1  # 使用麦克风
+is_streaming_chat: true # 开始流式聊天
+lang: "zh-CN" # 中文
+
+server_type: "async"
+server_port: 8012 #  与UE通信端口，若修改UE中也需要修改
+llm_port: 8000
+
+chat_type: "ChatGLMOnline" # 本地chatglm
+model_path: "F:/Model/hub/llama.cpp/chatglm-ggml.bin"
+chat_api_key: "869c8455b3850e4f962155f314b9cb8e.TAiyB4QnIH14dRpj" #使用在线模型请加入自己的api_key,并修改type为ChatGLMOnline或者ChatGPT
+
+#Audio2face "audio2face_headless.bat目录
+audio2face_path: "D:/Omniverse/pkg/deps/3757f0f707549e4cd2e0c789de84c010/"
+audio2face_scene_path: "C:/Users/admin/PycharmProjects/MetaChatBot/stage"
+
+speech_recognition_type: "Azure Speech" # Azure识别语音
+speech_recognition_model_path: "F:/Model/hub/whisper/ggml-small.bin" # whisper模型地址，需要将speech_recognition_type修改为Whisper
+
+mask_words:
+  "ChatGLM": ""
+  "清华大学": ""
+  "智谱清言": ""
+  "🤖": ""
+  "👋": ""

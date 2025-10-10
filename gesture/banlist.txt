@@ -1,0 +1,9 @@
+## 禁止采样的动画
+011_Happy_0_mirror_x_1_0.bvh
+012_Happy_1_mirror_x_1_0.bvh
+013_Happy_2_mirror_x_1_0.bvh
+014_Happy_3_mirror_x_1_0.bvh
+015_Happy_4_mirror_x_1_0.bvh
+043_Scared_1_mirror_x_1_0.bvh
+043_Scared_1_x_1_0.bvh
+015_Happy_4_x_1_0.bvh
