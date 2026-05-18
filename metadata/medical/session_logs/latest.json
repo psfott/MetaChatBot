@@ -1,0 +1,324 @@
+{
+  "script_id": "script1",
+  "condition": "baseline",
+  "lang": "en-US",
+  "voice": null,
+  "recognize_method": "push-to-talk",
+  "hold_key": "space",
+  "mode": "local_microphone_loop",
+  "created_at": "2026-05-18T14:49:16",
+  "turns": [
+    {
+      "index": 1,
+      "speaker": "doctor",
+      "text": "Hello, please have a seat. I'm Dr. Chen. I know waiting for results can be stressful, so today I will explain everything step by step, and I want you to stop me anytime if something is unclear.",
+      "metadata": "metadata/medical/baseline/script1_001_doctor.json",
+      "audio": "audio/medical/script1_001_doctor.wav",
+      "semantic_emotion": {
+        "neutral": 0.7,
+        "joy": 0.1,
+        "sadness": 0.2,
+        "anger": 0.0,
+        "fear": 0.0,
+        "disgust": 0.0,
+        "amazement": 0.0
+      }
+    },
+    {
+      "index": 2,
+      "speaker": "patient",
+      "expected_user_text": "Thank you, doctor. I've been anxious for weeks. I have abdominal pain almost every day, especially after meals, and I feel tired even after sleeping. I keep thinking maybe it's serious, and that uncertainty is making me more nervous.",
+      "input": "local_microphone",
+      "recognize_method": "push-to-talk",
+      "hold_key": "space",
+      "recognized_text": "I keep thinking it is serious. And that answered things.",
+      "recognize_time_sec": 17.333
+    },
+    {
+      "index": 3,
+      "speaker": "doctor",
+      "text": "I hear you, and your reaction is understandable. To make sure I have the full picture, can you tell me when the pain started, whether it has become more frequent, and whether you noticed appetite changes, fever, or recent weight loss?",
+      "metadata": "metadata/medical/baseline/script1_003_doctor.json",
+      "audio": "audio/medical/script1_003_doctor.wav",
+      "semantic_emotion": {
+        "neutral": 0.62,
+        "joy": 0.1,
+        "sadness": 0.28,
+        "anger": 0.0,
+        "fear": 0.0,
+        "disgust": 0.0,
+        "amazement": 0.0
+      }
+    },
+    {
+      "index": 4,
+      "speaker": "patient",
+      "expected_user_text": "It began around three months ago and has gradually become stronger. I lost around seven pounds without trying, and my appetite is lower than before. I haven't had clear fever, but I do feel weak and less focused at work every week.",
+      "input": "local_microphone",
+      "recognize_method": "push-to-talk",
+      "hold_key": "space",
+      "recognized_text": "",
+      "recognize_time_sec": 18.364
+    },
+    {
+      "index": 5,
+      "speaker": "doctor",
+      "text": "Thank you, that detail helps a lot. We reviewed your blood tests and imaging carefully. The findings do not suggest cancer, which is good news, but they do show a condition that should be treated soon to avoid progression and avoid avoidable complications.",
+      "metadata": "metadata/medical/baseline/script1_005_doctor.json",
+      "audio": "audio/medical/script1_005_doctor.wav",
+      "semantic_emotion": {
+        "neutral": 0.6,
+        "joy": 0.25,
+        "sadness": 0.15,
+        "anger": 0.0,
+        "fear": 0.0,
+        "disgust": 0.0,
+        "amazement": 0.0
+      }
+    },
+    {
+      "index": 6,
+      "speaker": "patient",
+      "expected_user_text": "I'm relieved to hear it isn't cancer, but surgery still scares me. I've never had general anesthesia before. I'm worried about waking up safely, about major complications, and about whether recovery will disrupt my job and family responsibilities for too long.",
+      "input": "local_microphone",
+      "recognize_method": "push-to-talk",
+      "hold_key": "space",
+      "recognized_text": "That is relieved to hear it is a cancer surgery still scares me. I've never had general medicine before. Major publications and about more than a comrade agreement, disruptive job factors, and so on. This form too.",
+      "recognize_time_sec": 23.064
+    },
+    {
+      "index": 7,
+      "speaker": "doctor",
+      "text": "Those are very important concerns, and I'm glad you are asking directly. For this procedure, the overall complication rate is low, about two to three percent, and serious complications are under one percent. Most problems, when they occur, are manageable and temporary.",
+      "metadata": "metadata/medical/baseline/script1_007_doctor.json",
+      "audio": "audio/medical/script1_007_doctor.wav",
+      "semantic_emotion": {
+        "neutral": 0.6,
+        "joy": 0.25,
+        "sadness": 0.15,
+        "anger": 0.0,
+        "fear": 0.0,
+        "disgust": 0.0,
+        "amazement": 0.0
+      }
+    },
+    {
+      "index": 8,
+      "speaker": "patient",
+      "expected_user_text": "That sounds somewhat reassuring, but anesthesia is still the part I fear most. I've heard stories from friends online, and I don't know what information is reliable. How do you evaluate risk before surgery, and how closely am I monitored during the operation?",
+      "input": "local_microphone",
+      "recognize_method": "push-to-talk",
+      "hold_key": "space",
+      "recognized_text": "We are sure that the necessary steam and hard on field post have heard stories from friends around here. I don't know what information is provable. How do you evaluate the risk before surgery in how close and quietly during?",
+      "recognize_time_sec": 20.167
+    },
+    {
+      "index": 9,
+      "speaker": "doctor",
+      "text": "Great question. Before surgery, our anesthesia team performs a full pre-operative evaluation, including heart and lung assessment and medication review. During surgery, we continuously monitor blood pressure, oxygen, breathing, and heart rhythm, and the anesthesiologist stays with you the entire time.",
+      "metadata": "metadata/medical/baseline/script1_009_doctor.json",
+      "audio": "audio/medical/script1_009_doctor.wav",
+      "semantic_emotion": {
+        "neutral": 0.7,
+        "joy": 0.1,
+        "sadness": 0.2,
+        "anger": 0.0,
+        "fear": 0.0,
+        "disgust": 0.0,
+        "amazement": 0.0
+      }
+    },
+    {
+      "index": 10,
+      "speaker": "patient",
+      "expected_user_text": "Okay, that helps. Can you also explain what the surgery itself involves, how long it usually takes, how much pain I should expect in the first week, and what kind of timeline I should plan for returning to normal daily activities?",
+      "input": "local_microphone",
+      "recognize_method": "push-to-talk",
+      "hold_key": "space",
+      "recognized_text": "OK, backups. Can you explain what the cigarette works are in here? It takes how much pain I should expect in the first week? What kind of timeline you should plan for 22?",
+      "recognize_time_sec": 15.065
+    },
+    {
+      "index": 11,
+      "speaker": "doctor",
+      "text": "Typically, the operation takes one to two hours. Most patients stay one or two nights in hospital, then recover at home. You may have discomfort early on, but we use a structured pain-control plan. Many patients improve clearly by week two, with fuller recovery in four to six weeks.",
+      "metadata": "metadata/medical/baseline/script1_011_doctor.json",
+      "audio": "audio/medical/script1_011_doctor.wav",
+      "semantic_emotion": {
+        "neutral": 0.62,
+        "joy": 0.1,
+        "sadness": 0.28,
+        "anger": 0.0,
+        "fear": 0.0,
+        "disgust": 0.0,
+        "amazement": 0.0
+      }
+    },
+    {
+      "index": 12,
+      "speaker": "patient",
+      "expected_user_text": "If recovery can take over a month, could I postpone this until my workload is lighter? I have deadlines in the coming weeks, and I am trying to balance health decisions with practical responsibilities, which is honestly part of why I feel overwhelmed right now.",
+      "input": "local_microphone",
+      "recognize_method": "push-to-talk",
+      "hold_key": "space",
+      "recognized_text": "If recovery can take over months and.",
+      "recognize_time_sec": 5.121
+    },
+    {
+      "index": 13,
+      "speaker": "doctor",
+      "text": "I understand that pressure. This is not an emergency today, but I would not delay for months. Waiting can increase pain and make treatment harder later. A safer plan is to schedule within the next four to six weeks and prepare work arrangements in advance.",
+      "metadata": "metadata/medical/baseline/script1_013_doctor.json",
+      "audio": "audio/medical/script1_013_doctor.wav",
+      "semantic_emotion": {
+        "neutral": 0.62,
+        "joy": 0.1,
+        "sadness": 0.28,
+        "anger": 0.0,
+        "fear": 0.0,
+        "disgust": 0.0,
+        "amazement": 0.0
+      }
+    },
+    {
+      "index": 14,
+      "speaker": "patient",
+      "expected_user_text": "I appreciate your honesty. Another concern is infection risk and what I need to do after discharge. I want to avoid mistakes at home. Could you tell me the key precautions, warning signs, and when I should contact the hospital urgently?",
+      "input": "local_microphone",
+      "recognize_method": "push-to-talk",
+      "hold_key": "space",
+      "recognized_text": "I appreciate you.",
+      "recognize_time_sec": 8.866
+    },
+    {
+      "index": 15,
+      "speaker": "doctor",
+      "text": "Absolutely. We give preventive antibiotics, operate in a sterile setting, and provide clear wound-care instructions. At home, watch for fever, increasing redness, drainage, or worsening pain. If any of these appear, contact us immediately. We also schedule follow-up checks to catch issues early.",
+      "metadata": "metadata/medical/baseline/script1_015_doctor.json",
+      "audio": "audio/medical/script1_015_doctor.wav",
+      "semantic_emotion": {
+        "neutral": 0.62,
+        "joy": 0.1,
+        "sadness": 0.28,
+        "anger": 0.0,
+        "fear": 0.0,
+        "disgust": 0.0,
+        "amazement": 0.0
+      }
+    },
+    {
+      "index": 16,
+      "speaker": "patient",
+      "expected_user_text": "That makes sense. I'm starting to feel calmer, but I still want to discuss this with my family before confirming. They will ask about benefits versus risks, and I want to explain your recommendations accurately instead of reacting from fear alone.",
+      "input": "local_microphone",
+      "recognize_method": "push-to-talk",
+      "hold_key": "space",
+      "recognized_text": "That makes sense. I'm.",
+      "recognize_time_sec": 3.484
+    },
+    {
+      "index": 17,
+      "speaker": "doctor",
+      "text": "That's a very reasonable approach. The key message is this: based on your test results, surgery offers the best chance to resolve symptoms and prevent progression, while the measured risks are low and actively managed. I can give you written material to review together.",
+      "metadata": "metadata/medical/baseline/script1_017_doctor.json",
+      "audio": "audio/medical/script1_017_doctor.wav",
+      "semantic_emotion": {
+        "neutral": 0.62,
+        "joy": 0.1,
+        "sadness": 0.28,
+        "anger": 0.0,
+        "fear": 0.0,
+        "disgust": 0.0,
+        "amazement": 0.0
+      }
+    },
+    {
+      "index": 18,
+      "speaker": "patient",
+      "expected_user_text": "Thank you. Could you also summarize what might happen if I choose not to do surgery now, so I can compare both paths clearly? I think having a balanced summary will help my family and me make a thoughtful decision this week.",
+      "input": "local_microphone",
+      "recognize_method": "push-to-talk",
+      "hold_key": "space",
+      "recognized_text": "Thank you. Have a better summer day.",
+      "recognize_time_sec": 14.746
+    },
+    {
+      "index": 19,
+      "speaker": "doctor",
+      "text": "Without intervention, this condition is likely to progress, with increasing pain, fatigue, and higher chance of secondary complications. Delayed treatment can also reduce recovery comfort later. Acting within a planned window usually leads to smoother recovery and better overall quality of life.",
+      "metadata": "metadata/medical/baseline/script1_019_doctor.json",
+      "audio": "audio/medical/script1_019_doctor.wav",
+      "semantic_emotion": {
+        "neutral": 0.62,
+        "joy": 0.1,
+        "sadness": 0.28,
+        "anger": 0.0,
+        "fear": 0.0,
+        "disgust": 0.0,
+        "amazement": 0.0
+      }
+    },
+    {
+      "index": 20,
+      "speaker": "patient",
+      "expected_user_text": "Understood. If I decide to proceed, what should I prepare before admission? I want a checklist so I can reduce uncertainty, arrange support at home, and avoid last-minute problems with medications, fasting rules, or transportation after discharge.",
+      "input": "local_microphone",
+      "recognize_method": "push-to-talk",
+      "hold_key": "space",
+      "recognized_text": "",
+      "recognize_time_sec": 2.376
+    },
+    {
+      "index": 21,
+      "speaker": "doctor",
+      "text": "Good planning helps a lot. We will provide a pre-op checklist including medication adjustments, fasting timing, arrival instructions, and post-op home support. Please bring your medication list, complete pre-op tests on schedule, and arrange someone to accompany you after discharge.",
+      "metadata": "metadata/medical/baseline/script1_021_doctor.json",
+      "audio": "audio/medical/script1_021_doctor.wav",
+      "semantic_emotion": {
+        "neutral": 0.6,
+        "joy": 0.25,
+        "sadness": 0.15,
+        "anger": 0.0,
+        "fear": 0.0,
+        "disgust": 0.0,
+        "amazement": 0.0
+      }
+    },
+    {
+      "index": 22,
+      "speaker": "patient",
+      "expected_user_text": "This conversation has helped me a lot. I still feel nervous, but now it's more manageable because I understand the plan and the numbers. I'd like to take two or three days to discuss with my family and then contact your office.",
+      "input": "local_microphone",
+      "recognize_method": "push-to-talk",
+      "hold_key": "space",
+      "recognized_text": "This conversation Stop.",
+      "recognize_time_sec": 3.342
+    },
+    {
+      "index": 23,
+      "speaker": "doctor",
+      "text": "Of course. Take the time you need, and write down any new questions. My team and I are here to support you throughout the process. When you are ready, we can set a date and move forward in a safe, well-prepared way.",
+      "metadata": "metadata/medical/baseline/script1_023_doctor.json",
+      "audio": "audio/medical/script1_023_doctor.wav",
+      "semantic_emotion": {
+        "neutral": 0.7,
+        "joy": 0.1,
+        "sadness": 0.2,
+        "anger": 0.0,
+        "fear": 0.0,
+        "disgust": 0.0,
+        "amazement": 0.0
+      }
+    },
+    {
+      "index": 24,
+      "speaker": "patient",
+      "expected_user_text": "Thank you, doctor. I appreciate your patience and clear explanation. I feel much less panicked than when I arrived, and I think I can make a decision with more confidence now.",
+      "input": "local_microphone",
+      "recognize_method": "push-to-talk",
+      "hold_key": "space",
+      "recognized_text": "",
+      "recognize_time_sec": 2.704
+    }
+  ]
+}

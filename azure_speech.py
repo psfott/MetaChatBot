@@ -1,24 +1,41 @@
 import os
-import os
 import wave
+from html import escape
 from concurrent.futures import ThreadPoolExecutor
 from time import time, sleep
 
+from global_data import AZURE_SPEECH_KEY, AZURE_SERVE_REGION, reversed_azureSpeech_emotion_map, azuresSpeech_emotion_map,reversed_gesture_emotion_map
 import azure.cognitiveservices.speech as speechsdk
-import grpc
-import keyboard
 import numpy as np
-import pyaudio
 from azure.cognitiveservices.speech import AudioDataStream, SpeechConfig, SpeechSynthesizer
 
-from global_data import reversed_azureSpeech_emotion_map, azuresSpeech_emotion_map, reversed_gesture_emotion_map
-from streaming_server import audio2face_pb2_grpc, audio2face_pb2
+
+try:
+    import grpc
+except ImportError:
+    grpc = None
+
+try:
+    import keyboard
+except ImportError:
+    keyboard = None
+
+try:
+    import pyaudio
+except ImportError:
+    pyaudio = None
+
+try:
+    from streaming_server import audio2face_pb2_grpc, audio2face_pb2
+except ImportError:
+    audio2face_pb2_grpc = None
+    audio2face_pb2 = None
 
 
 class SpeechController:
     def __init__(self, lang="en-US", role=None, devices="mic", filename=None, timeout="500", delay="500"):
         self.start_time = 0
-        self.speech_key, self.service_region = "f8a5185d42ec403b937de9469cb3b178", "eastasia"
+        self.speech_key, self.service_region = AZURE_SPEECH_KEY, AZURE_SERVE_REGION
         self.lang = lang
         self.speech_config = SpeechConfig(subscription=self.speech_key, region=self.service_region,
                                           speech_recognition_language=self.lang)
@@ -51,6 +68,7 @@ class SpeechController:
         self.speech_recognizer = speechsdk.SpeechRecognizer(speech_config=self.speech_config, audio_config=audio_config)
         self.synthesizer = SpeechSynthesizer(speech_config=self.speech_config, audio_config=None)
         self.connected_lambda = False
+        self.last_synthesis_result = None
 
     def set_output_format(self, output_format=speechsdk.SpeechSynthesisOutputFormat.Riff48Khz16BitMonoPcm):
         self.speech_config.set_speech_synthesis_output_format(output_format)
@@ -60,6 +78,8 @@ class SpeechController:
         self.pool.shutdown()
 
     def __get_microphone(self):
+        if pyaudio is None:
+            raise RuntimeError("pyaudio is required to enumerate microphone devices.")
         p = pyaudio.PyAudio()
         devices = []
         for i in range(p.get_device_count()):
@@ -69,11 +89,31 @@ class SpeechController:
         return devices
 
     def create_ssml_text(self, emotion="Default", degree=1.0, content=""):
+        safe_content = escape(content, quote=False)
+        if emotion == "Default":
+            body = safe_content
+        else:
+            body = f"""<mstts:express-as style="{emotion}" styledegree="{degree}">{safe_content}</mstts:express-as>"""
+
         template = f"""<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" 
         xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="{self.lang}"> <voice 
-        name="{self.lang}-{self.role}"><s /> <mstts:express-as style="{emotion}" 
-        styledegree="{degree}">{content}</mstts:express-as> <s /></voice></speak>"""
+        name="{self.lang}-{self.role}"><s /> {body} <s /></voice></speak>"""
         return template
+
+    def __raise_if_synthesis_failed(self, result):
+        if result.reason == speechsdk.ResultReason.SynthesizingAudioCompleted:
+            return
+
+        details = result.cancellation_details
+        reason = details.reason if details is not None else result.reason
+        error_details = details.error_details if details is not None else ""
+        raise RuntimeError(
+            f"Azure speech synthesis failed: reason={reason}, error={error_details}"
+        )
+
+    def __wav_duration(self, filename):
+        with wave.open(filename, "rb") as wav_file:
+            return wav_file.getnframes() / wav_file.getframerate()
 
     def __extract_emotion(self, emotion_dict: dict):
         max_strength = 0.0
@@ -88,16 +128,19 @@ class SpeechController:
         else:
             return "Default", 0.0
 
+    def __resolve_speech_style(self, emotion):
+        if isinstance(emotion, dict):
+            return self.__extract_emotion(emotion)
+        return emotion, 1.0
+
     def generate_audio_streaming(self, emotion, content):
 
-        if isinstance(emotion, dict):
-            emotion, degree = self.__extract_emotion(emotion)
-        else:
-            degree = 1.0
+        emotion, degree = self.__resolve_speech_style(emotion)
 
         text = self.create_ssml_text(emotion, degree, content)
 
         result = self.synthesizer.start_speaking_ssml_async(text).get()
+        self.last_synthesis_result = result
 
         audio_data_stream = AudioDataStream(result)
 
@@ -114,6 +157,19 @@ class SpeechController:
     def synthesis(self, emotion, content, filename, is_streaming=False, audio2face=None, server=None,
                   gesture_generator=None,
                   answer_index=None):
+
+        if not is_streaming:
+            emotion_label, degree = self.__resolve_speech_style(emotion)
+            text = self.create_ssml_text(emotion_label, degree, content)
+            start_generating_time = time()
+            result = self.synthesizer.speak_ssml_async(text).get()
+            self.last_synthesis_result = result
+            self.__raise_if_synthesis_failed(result)
+            if isinstance(filename, os.PathLike):
+                filename = os.fspath(filename)
+            os.makedirs(os.path.dirname(filename) or ".", exist_ok=True)
+            AudioDataStream(result).save_to_wav_file(filename)
+            return emotion, self.__wav_duration(filename), start_generating_time
 
         emotion_label, audio_data_stream = self.generate_audio_streaming(emotion, content)
 
@@ -146,7 +202,7 @@ class SpeechController:
         buffer_size = 48000
         times = 0
 
-        if os.path.exists("./audio/temp"):
+        if is_streaming and os.path.exists("./audio/temp"):
             for temp_audio_file in os.listdir("./audio/temp"):
                 os.remove(os.path.join("./audio/temp", temp_audio_file))
 
@@ -158,6 +214,8 @@ class SpeechController:
             audio_buffer = bytes(buffer_size)
 
             if is_streaming:
+                if grpc is None or audio2face_pb2_grpc is None or audio2face_pb2 is None:
+                    raise RuntimeError("grpc and streaming_server protobuf modules are required for legacy streaming.")
                 with grpc.insecure_channel("localhost:50051") as channel:
                     print("Channel created!")
 

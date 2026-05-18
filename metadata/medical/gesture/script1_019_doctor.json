@@ -1,0 +1,56 @@
+{
+  "script_id": "script1",
+  "index": 19,
+  "speaker": "doctor",
+  "text": "Without intervention, this condition is likely to progress, with increasing pain, fatigue, and higher chance of secondary complications. Delayed treatment can also reduce recovery comfort later. Acting within a planned window usually leads to smoother recovery and better overall quality of life.",
+  "semantic_emotion": {
+    "neutral": 0.62,
+    "joy": 0.1,
+    "sadness": 0.28,
+    "anger": 0.0,
+    "fear": 0.0,
+    "disgust": 0.0,
+    "amazement": 0.0
+  },
+  "emotion_source": "heuristic",
+  "condition": {
+    "name": "gesture",
+    "doctor_face_enabled": false,
+    "doctor_gesture_enabled": true
+  },
+  "role_in_experiment": "avatar_doctor",
+  "audio": "audio/medical/script1_019_doctor.wav",
+  "bvh": "gesture/medical/script1_019_doctor.bvh",
+  "azure": {
+    "style": "Default",
+    "degree": 0.62
+  },
+  "face_control": {
+    "enabled": false,
+    "ace_override_strength": 0.0,
+    "emotion": {
+      "neutral": 0.62,
+      "joy": 0.1,
+      "sadness": 0.28
+    }
+  },
+  "gesture_control": {
+    "enabled": true,
+    "emotion": {
+      "neutral": 0.62,
+      "joy": 0.1,
+      "sadness": 0.28,
+      "anger": 0.0,
+      "fear": 0.0,
+      "disgust": 0.0,
+      "amazement": 0.0
+    },
+    "style": "neutral",
+    "dominant_emotion": "neutral",
+    "strength": 0.62
+  },
+  "generation_status": {
+    "audio": "exists",
+    "bvh": "pending"
+  }
+}

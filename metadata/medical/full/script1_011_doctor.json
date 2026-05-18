@@ -1,0 +1,56 @@
+{
+  "script_id": "script1",
+  "index": 11,
+  "speaker": "doctor",
+  "text": "Typically, the operation takes one to two hours. Most patients stay one or two nights in hospital, then recover at home. You may have discomfort early on, but we use a structured pain-control plan. Many patients improve clearly by week two, with fuller recovery in four to six weeks.",
+  "semantic_emotion": {
+    "neutral": 0.62,
+    "joy": 0.1,
+    "sadness": 0.28,
+    "anger": 0.0,
+    "fear": 0.0,
+    "disgust": 0.0,
+    "amazement": 0.0
+  },
+  "emotion_source": "heuristic",
+  "condition": {
+    "name": "full",
+    "doctor_face_enabled": true,
+    "doctor_gesture_enabled": true
+  },
+  "role_in_experiment": "avatar_doctor",
+  "audio": "audio/medical/script1_011_doctor.wav",
+  "bvh": "gesture/medical/script1_011_doctor.bvh",
+  "azure": {
+    "style": "Default",
+    "degree": 0.62
+  },
+  "face_control": {
+    "enabled": true,
+    "ace_override_strength": 0.2,
+    "emotion": {
+      "neutral": 0.62,
+      "joy": 0.1,
+      "sadness": 0.28
+    }
+  },
+  "gesture_control": {
+    "enabled": true,
+    "emotion": {
+      "neutral": 0.62,
+      "joy": 0.1,
+      "sadness": 0.28,
+      "anger": 0.0,
+      "fear": 0.0,
+      "disgust": 0.0,
+      "amazement": 0.0
+    },
+    "style": "neutral",
+    "dominant_emotion": "neutral",
+    "strength": 0.62
+  },
+  "generation_status": {
+    "audio": "exists",
+    "bvh": "pending"
+  }
+}

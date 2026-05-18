@@ -1,0 +1,56 @@
+{
+  "script_id": "script1",
+  "index": 7,
+  "speaker": "doctor",
+  "text": "Those are very important concerns, and I'm glad you are asking directly. For this procedure, the overall complication rate is low, about two to three percent, and serious complications are under one percent. Most problems, when they occur, are manageable and temporary.",
+  "semantic_emotion": {
+    "neutral": 0.6,
+    "joy": 0.25,
+    "sadness": 0.15,
+    "anger": 0.0,
+    "fear": 0.0,
+    "disgust": 0.0,
+    "amazement": 0.0
+  },
+  "emotion_source": "heuristic",
+  "condition": {
+    "name": "face",
+    "doctor_face_enabled": true,
+    "doctor_gesture_enabled": false
+  },
+  "role_in_experiment": "avatar_doctor",
+  "audio": "audio/medical/script1_007_doctor.wav",
+  "bvh": "gesture/medical/script1_007_doctor.bvh",
+  "azure": {
+    "style": "Default",
+    "degree": 0.6
+  },
+  "face_control": {
+    "enabled": true,
+    "ace_override_strength": 0.2,
+    "emotion": {
+      "neutral": 0.6,
+      "joy": 0.25,
+      "sadness": 0.15
+    }
+  },
+  "gesture_control": {
+    "enabled": false,
+    "emotion": {
+      "neutral": 0.6,
+      "joy": 0.25,
+      "sadness": 0.15,
+      "anger": 0.0,
+      "fear": 0.0,
+      "disgust": 0.0,
+      "amazement": 0.0
+    },
+    "style": "neutral",
+    "dominant_emotion": "neutral",
+    "strength": 0.6
+  },
+  "generation_status": {
+    "audio": "exists",
+    "bvh": "not_required"
+  }
+}

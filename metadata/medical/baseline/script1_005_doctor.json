@@ -1,0 +1,56 @@
+{
+  "script_id": "script1",
+  "index": 5,
+  "speaker": "doctor",
+  "text": "Thank you, that detail helps a lot. We reviewed your blood tests and imaging carefully. The findings do not suggest cancer, which is good news, but they do show a condition that should be treated soon to avoid progression and avoid avoidable complications.",
+  "semantic_emotion": {
+    "neutral": 0.6,
+    "joy": 0.25,
+    "sadness": 0.15,
+    "anger": 0.0,
+    "fear": 0.0,
+    "disgust": 0.0,
+    "amazement": 0.0
+  },
+  "emotion_source": "heuristic",
+  "condition": {
+    "name": "baseline",
+    "doctor_face_enabled": false,
+    "doctor_gesture_enabled": false
+  },
+  "role_in_experiment": "avatar_doctor",
+  "audio": "audio/medical/script1_005_doctor.wav",
+  "bvh": "gesture/medical/script1_005_doctor.bvh",
+  "azure": {
+    "style": "Default",
+    "degree": 0.6
+  },
+  "face_control": {
+    "enabled": false,
+    "ace_override_strength": 0.0,
+    "emotion": {
+      "neutral": 0.6,
+      "joy": 0.25,
+      "sadness": 0.15
+    }
+  },
+  "gesture_control": {
+    "enabled": false,
+    "emotion": {
+      "neutral": 0.6,
+      "joy": 0.25,
+      "sadness": 0.15,
+      "anger": 0.0,
+      "fear": 0.0,
+      "disgust": 0.0,
+      "amazement": 0.0
+    },
+    "style": "neutral",
+    "dominant_emotion": "neutral",
+    "strength": 0.6
+  },
+  "generation_status": {
+    "audio": "exists",
+    "bvh": "not_required"
+  }
+}

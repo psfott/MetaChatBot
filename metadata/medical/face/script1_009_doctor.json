@@ -1,0 +1,56 @@
+{
+  "script_id": "script1",
+  "index": 9,
+  "speaker": "doctor",
+  "text": "Great question. Before surgery, our anesthesia team performs a full pre-operative evaluation, including heart and lung assessment and medication review. During surgery, we continuously monitor blood pressure, oxygen, breathing, and heart rhythm, and the anesthesiologist stays with you the entire time.",
+  "semantic_emotion": {
+    "neutral": 0.7,
+    "joy": 0.1,
+    "sadness": 0.2,
+    "anger": 0.0,
+    "fear": 0.0,
+    "disgust": 0.0,
+    "amazement": 0.0
+  },
+  "emotion_source": "heuristic",
+  "condition": {
+    "name": "face",
+    "doctor_face_enabled": true,
+    "doctor_gesture_enabled": false
+  },
+  "role_in_experiment": "avatar_doctor",
+  "audio": "audio/medical/script1_009_doctor.wav",
+  "bvh": "gesture/medical/script1_009_doctor.bvh",
+  "azure": {
+    "style": "Default",
+    "degree": 0.7
+  },
+  "face_control": {
+    "enabled": true,
+    "ace_override_strength": 0.2,
+    "emotion": {
+      "neutral": 0.7,
+      "joy": 0.1,
+      "sadness": 0.2
+    }
+  },
+  "gesture_control": {
+    "enabled": false,
+    "emotion": {
+      "neutral": 0.7,
+      "joy": 0.1,
+      "sadness": 0.2,
+      "anger": 0.0,
+      "fear": 0.0,
+      "disgust": 0.0,
+      "amazement": 0.0
+    },
+    "style": "neutral",
+    "dominant_emotion": "neutral",
+    "strength": 0.7
+  },
+  "generation_status": {
+    "audio": "exists",
+    "bvh": "not_required"
+  }
+}

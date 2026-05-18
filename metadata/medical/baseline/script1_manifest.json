@@ -1,0 +1,253 @@
+{
+  "script_id": "script1",
+  "condition": "baseline",
+  "patient_role": "user",
+  "doctor_role": "avatar",
+  "emotion_source": "heuristic",
+  "doctor_items": [
+    "metadata/medical/baseline/script1_001_doctor.json",
+    "metadata/medical/baseline/script1_003_doctor.json",
+    "metadata/medical/baseline/script1_005_doctor.json",
+    "metadata/medical/baseline/script1_007_doctor.json",
+    "metadata/medical/baseline/script1_009_doctor.json",
+    "metadata/medical/baseline/script1_011_doctor.json",
+    "metadata/medical/baseline/script1_013_doctor.json",
+    "metadata/medical/baseline/script1_015_doctor.json",
+    "metadata/medical/baseline/script1_017_doctor.json",
+    "metadata/medical/baseline/script1_019_doctor.json",
+    "metadata/medical/baseline/script1_021_doctor.json",
+    "metadata/medical/baseline/script1_023_doctor.json"
+  ],
+  "patient_metadata": "omitted_user_microphone_turns",
+  "removed_patient_metadata_count": 0,
+  "turns": [
+    {
+      "index": 1,
+      "speaker": "doctor",
+      "role_in_experiment": "avatar_doctor",
+      "metadata": "metadata/medical/baseline/script1_001_doctor.json",
+      "audio": "audio/medical/script1_001_doctor.wav",
+      "bvh": "gesture/medical/script1_001_doctor.bvh"
+    },
+    {
+      "script_id": "script1",
+      "index": 2,
+      "speaker": "patient",
+      "role_in_experiment": "user_patient",
+      "input": "local_microphone",
+      "expected_user_text": "Thank you, doctor. I've been anxious for weeks. I have abdominal pain almost every day, especially after meals, and I feel tired even after sleeping. I keep thinking maybe it's serious, and that uncertainty is making me more nervous.",
+      "metadata": null,
+      "audio": null,
+      "bvh": null
+    },
+    {
+      "index": 3,
+      "speaker": "doctor",
+      "role_in_experiment": "avatar_doctor",
+      "metadata": "metadata/medical/baseline/script1_003_doctor.json",
+      "audio": "audio/medical/script1_003_doctor.wav",
+      "bvh": "gesture/medical/script1_003_doctor.bvh"
+    },
+    {
+      "script_id": "script1",
+      "index": 4,
+      "speaker": "patient",
+      "role_in_experiment": "user_patient",
+      "input": "local_microphone",
+      "expected_user_text": "It began around three months ago and has gradually become stronger. I lost around seven pounds without trying, and my appetite is lower than before. I haven't had clear fever, but I do feel weak and less focused at work every week.",
+      "metadata": null,
+      "audio": null,
+      "bvh": null
+    },
+    {
+      "index": 5,
+      "speaker": "doctor",
+      "role_in_experiment": "avatar_doctor",
+      "metadata": "metadata/medical/baseline/script1_005_doctor.json",
+      "audio": "audio/medical/script1_005_doctor.wav",
+      "bvh": "gesture/medical/script1_005_doctor.bvh"
+    },
+    {
+      "script_id": "script1",
+      "index": 6,
+      "speaker": "patient",
+      "role_in_experiment": "user_patient",
+      "input": "local_microphone",
+      "expected_user_text": "I'm relieved to hear it isn't cancer, but surgery still scares me. I've never had general anesthesia before. I'm worried about waking up safely, about major complications, and about whether recovery will disrupt my job and family responsibilities for too long.",
+      "metadata": null,
+      "audio": null,
+      "bvh": null
+    },
+    {
+      "index": 7,
+      "speaker": "doctor",
+      "role_in_experiment": "avatar_doctor",
+      "metadata": "metadata/medical/baseline/script1_007_doctor.json",
+      "audio": "audio/medical/script1_007_doctor.wav",
+      "bvh": "gesture/medical/script1_007_doctor.bvh"
+    },
+    {
+      "script_id": "script1",
+      "index": 8,
+      "speaker": "patient",
+      "role_in_experiment": "user_patient",
+      "input": "local_microphone",
+      "expected_user_text": "That sounds somewhat reassuring, but anesthesia is still the part I fear most. I've heard stories from friends online, and I don't know what information is reliable. How do you evaluate risk before surgery, and how closely am I monitored during the operation?",
+      "metadata": null,
+      "audio": null,
+      "bvh": null
+    },
+    {
+      "index": 9,
+      "speaker": "doctor",
+      "role_in_experiment": "avatar_doctor",
+      "metadata": "metadata/medical/baseline/script1_009_doctor.json",
+      "audio": "audio/medical/script1_009_doctor.wav",
+      "bvh": "gesture/medical/script1_009_doctor.bvh"
+    },
+    {
+      "script_id": "script1",
+      "index": 10,
+      "speaker": "patient",
+      "role_in_experiment": "user_patient",
+      "input": "local_microphone",
+      "expected_user_text": "Okay, that helps. Can you also explain what the surgery itself involves, how long it usually takes, how much pain I should expect in the first week, and what kind of timeline I should plan for returning to normal daily activities?",
+      "metadata": null,
+      "audio": null,
+      "bvh": null
+    },
+    {
+      "index": 11,
+      "speaker": "doctor",
+      "role_in_experiment": "avatar_doctor",
+      "metadata": "metadata/medical/baseline/script1_011_doctor.json",
+      "audio": "audio/medical/script1_011_doctor.wav",
+      "bvh": "gesture/medical/script1_011_doctor.bvh"
+    },
+    {
+      "script_id": "script1",
+      "index": 12,
+      "speaker": "patient",
+      "role_in_experiment": "user_patient",
+      "input": "local_microphone",
+      "expected_user_text": "If recovery can take over a month, could I postpone this until my workload is lighter? I have deadlines in the coming weeks, and I am trying to balance health decisions with practical responsibilities, which is honestly part of why I feel overwhelmed right now.",
+      "metadata": null,
+      "audio": null,
+      "bvh": null
+    },
+    {
+      "index": 13,
+      "speaker": "doctor",
+      "role_in_experiment": "avatar_doctor",
+      "metadata": "metadata/medical/baseline/script1_013_doctor.json",
+      "audio": "audio/medical/script1_013_doctor.wav",
+      "bvh": "gesture/medical/script1_013_doctor.bvh"
+    },
+    {
+      "script_id": "script1",
+      "index": 14,
+      "speaker": "patient",
+      "role_in_experiment": "user_patient",
+      "input": "local_microphone",
+      "expected_user_text": "I appreciate your honesty. Another concern is infection risk and what I need to do after discharge. I want to avoid mistakes at home. Could you tell me the key precautions, warning signs, and when I should contact the hospital urgently?",
+      "metadata": null,
+      "audio": null,
+      "bvh": null
+    },
+    {
+      "index": 15,
+      "speaker": "doctor",
+      "role_in_experiment": "avatar_doctor",
+      "metadata": "metadata/medical/baseline/script1_015_doctor.json",
+      "audio": "audio/medical/script1_015_doctor.wav",
+      "bvh": "gesture/medical/script1_015_doctor.bvh"
+    },
+    {
+      "script_id": "script1",
+      "index": 16,
+      "speaker": "patient",
+      "role_in_experiment": "user_patient",
+      "input": "local_microphone",
+      "expected_user_text": "That makes sense. I'm starting to feel calmer, but I still want to discuss this with my family before confirming. They will ask about benefits versus risks, and I want to explain your recommendations accurately instead of reacting from fear alone.",
+      "metadata": null,
+      "audio": null,
+      "bvh": null
+    },
+    {
+      "index": 17,
+      "speaker": "doctor",
+      "role_in_experiment": "avatar_doctor",
+      "metadata": "metadata/medical/baseline/script1_017_doctor.json",
+      "audio": "audio/medical/script1_017_doctor.wav",
+      "bvh": "gesture/medical/script1_017_doctor.bvh"
+    },
+    {
+      "script_id": "script1",
+      "index": 18,
+      "speaker": "patient",
+      "role_in_experiment": "user_patient",
+      "input": "local_microphone",
+      "expected_user_text": "Thank you. Could you also summarize what might happen if I choose not to do surgery now, so I can compare both paths clearly? I think having a balanced summary will help my family and me make a thoughtful decision this week.",
+      "metadata": null,
+      "audio": null,
+      "bvh": null
+    },
+    {
+      "index": 19,
+      "speaker": "doctor",
+      "role_in_experiment": "avatar_doctor",
+      "metadata": "metadata/medical/baseline/script1_019_doctor.json",
+      "audio": "audio/medical/script1_019_doctor.wav",
+      "bvh": "gesture/medical/script1_019_doctor.bvh"
+    },
+    {
+      "script_id": "script1",
+      "index": 20,
+      "speaker": "patient",
+      "role_in_experiment": "user_patient",
+      "input": "local_microphone",
+      "expected_user_text": "Understood. If I decide to proceed, what should I prepare before admission? I want a checklist so I can reduce uncertainty, arrange support at home, and avoid last-minute problems with medications, fasting rules, or transportation after discharge.",
+      "metadata": null,
+      "audio": null,
+      "bvh": null
+    },
+    {
+      "index": 21,
+      "speaker": "doctor",
+      "role_in_experiment": "avatar_doctor",
+      "metadata": "metadata/medical/baseline/script1_021_doctor.json",
+      "audio": "audio/medical/script1_021_doctor.wav",
+      "bvh": "gesture/medical/script1_021_doctor.bvh"
+    },
+    {
+      "script_id": "script1",
+      "index": 22,
+      "speaker": "patient",
+      "role_in_experiment": "user_patient",
+      "input": "local_microphone",
+      "expected_user_text": "This conversation has helped me a lot. I still feel nervous, but now it's more manageable because I understand the plan and the numbers. I'd like to take two or three days to discuss with my family and then contact your office.",
+      "metadata": null,
+      "audio": null,
+      "bvh": null
+    },
+    {
+      "index": 23,
+      "speaker": "doctor",
+      "role_in_experiment": "avatar_doctor",
+      "metadata": "metadata/medical/baseline/script1_023_doctor.json",
+      "audio": "audio/medical/script1_023_doctor.wav",
+      "bvh": "gesture/medical/script1_023_doctor.bvh"
+    },
+    {
+      "script_id": "script1",
+      "index": 24,
+      "speaker": "patient",
+      "role_in_experiment": "user_patient",
+      "input": "local_microphone",
+      "expected_user_text": "Thank you, doctor. I appreciate your patience and clear explanation. I feel much less panicked than when I arrived, and I think I can make a decision with more confidence now.",
+      "metadata": null,
+      "audio": null,
+      "bvh": null
+    }
+  ]
+}

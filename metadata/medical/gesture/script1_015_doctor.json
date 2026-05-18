@@ -1,0 +1,56 @@
+{
+  "script_id": "script1",
+  "index": 15,
+  "speaker": "doctor",
+  "text": "Absolutely. We give preventive antibiotics, operate in a sterile setting, and provide clear wound-care instructions. At home, watch for fever, increasing redness, drainage, or worsening pain. If any of these appear, contact us immediately. We also schedule follow-up checks to catch issues early.",
+  "semantic_emotion": {
+    "neutral": 0.62,
+    "joy": 0.1,
+    "sadness": 0.28,
+    "anger": 0.0,
+    "fear": 0.0,
+    "disgust": 0.0,
+    "amazement": 0.0
+  },
+  "emotion_source": "heuristic",
+  "condition": {
+    "name": "gesture",
+    "doctor_face_enabled": false,
+    "doctor_gesture_enabled": true
+  },
+  "role_in_experiment": "avatar_doctor",
+  "audio": "audio/medical/script1_015_doctor.wav",
+  "bvh": "gesture/medical/script1_015_doctor.bvh",
+  "azure": {
+    "style": "Default",
+    "degree": 0.62
+  },
+  "face_control": {
+    "enabled": false,
+    "ace_override_strength": 0.0,
+    "emotion": {
+      "neutral": 0.62,
+      "joy": 0.1,
+      "sadness": 0.28
+    }
+  },
+  "gesture_control": {
+    "enabled": true,
+    "emotion": {
+      "neutral": 0.62,
+      "joy": 0.1,
+      "sadness": 0.28,
+      "anger": 0.0,
+      "fear": 0.0,
+      "disgust": 0.0,
+      "amazement": 0.0
+    },
+    "style": "neutral",
+    "dominant_emotion": "neutral",
+    "strength": 0.62
+  },
+  "generation_status": {
+    "audio": "exists",
+    "bvh": "pending"
+  }
+}
