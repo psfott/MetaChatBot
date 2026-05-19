@@ -26,5 +26,27 @@
       {"doctor": "Of course. Take the time you need, and write down any new questions. My team and I are here to support you throughout the process. When you are ready, we can set a date and move forward in a safe, well-prepared way."},
       {"patient": "Thank you, doctor. I appreciate your patience and clear explanation. I feel much less panicked than when I arrived, and I think I can make a decision with more confidence now."}
     ]
+  },
+  "script2": {
+    "background": {
+      "source": "Based on the experiment scenario for empathic nonverbal behavior in a virtual medical consultation.",
+      "clinical_context": "The patient has symptomatic gallstones with chronic gallbladder inflammation. The doctor recommends planned laparoscopic gallbladder removal because the condition is not an emergency today, but delaying too long may increase pain and complications.",
+      "patient_state": "The patient is anxious about surgery, anesthesia, recovery time, and whether the condition could be cancer.",
+      "experimental_goal": "A short medical dialogue for comparing virtual doctor conditions with or without empathic facial expression and gesture."
+    },
+    "dialogue": [
+      {"doctor": "Hello, please have a seat. I'm Dr. Chen. I know waiting for results is stressful, so I will explain the findings clearly and we can go step by step."},
+      {"patient": "Thank you, doctor. I have been very anxious. I keep having pain after meals, and I am worried this could be something serious."},
+      {"doctor": "I understand why you feel worried. Your tests do not suggest cancer, which is reassuring. They show gallstones with gallbladder inflammation, and this can explain your pain and tiredness."},
+      {"patient": "That is a relief, but surgery still scares me. I have never had general anesthesia, and I am worried about complications."},
+      {"doctor": "Those concerns are completely reasonable. For this planned laparoscopic surgery, serious complications are uncommon. Before the operation, anesthesia will review your health, and during surgery your breathing, oxygen, blood pressure, and heart rhythm are monitored continuously."},
+      {"patient": "That helps. What would recovery look like, and how much time should I plan away from work and family responsibilities?"},
+      {"doctor": "Most patients stay one night or sometimes go home the same day. Pain is usually strongest in the first few days and improves with medication. Many people return to light daily activities within one to two weeks."},
+      {"patient": "Could I wait until work is less busy, or would postponing it make things worse?"},
+      {"doctor": "It is not an emergency today, so we can plan around your schedule. I would avoid delaying for months, because repeated attacks can cause stronger pain, infection, or a more urgent operation later."},
+      {"patient": "I see. What should I watch for at home before surgery, and what should I prepare if I decide to proceed?"},
+      {"doctor": "Call us urgently for fever, worsening pain, yellow eyes, or persistent vomiting. If you choose surgery, we will give you a checklist for medicines, fasting, transport, and home support. You can also take a few days to discuss this with your family."},
+      {"patient": "Thank you. I still feel nervous, but I understand the situation better and can make a decision more calmly."}
+    ]
   }
 }

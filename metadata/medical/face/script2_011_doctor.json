@@ -1,0 +1,68 @@
+{
+  "script_id": "script2",
+  "index": 11,
+  "speaker": "doctor",
+  "text": "Call us urgently for fever, worsening pain, yellow eyes, or persistent vomiting. If you choose surgery, we will give you a checklist for medicines, fasting, transport, and home support. You can also take a few days to discuss this with your family.",
+  "semantic_emotion": {
+    "neutral": 0.08,
+    "amazement": 0.0,
+    "anger": 0.0,
+    "cheekiness": 0.0,
+    "disgust": 0.0,
+    "fear": 0.18,
+    "grief": 0.08,
+    "joy": 0.12,
+    "out_of_breath": 0.0,
+    "pain": 0.05,
+    "sadness": 0.62
+  },
+  "emotion_source": "heuristic",
+  "condition": {
+    "name": "face",
+    "doctor_face_enabled": true,
+    "doctor_gesture_enabled": false
+  },
+  "role_in_experiment": "avatar_doctor",
+  "audio": "audio/medical/script2_011_doctor.wav",
+  "bvh": "gesture/medical/script2_011_doctor.bvh",
+  "azure": {
+    "style": "sad",
+    "degree": 0.62
+  },
+  "face_control": {
+    "enabled": true,
+    "ace_override_strength": 0.85,
+    "emotion": {
+      "neutral": 0.08,
+      "amazement": 0.0,
+      "anger": 0.0,
+      "cheekiness": 0.0,
+      "disgust": 0.0,
+      "fear": 0.18,
+      "grief": 0.08,
+      "joy": 0.12,
+      "out_of_breath": 0.0,
+      "pain": 0.05,
+      "sadness": 0.62
+    }
+  },
+  "gesture_control": {
+    "enabled": false,
+    "emotion": {
+      "neutral": 0.08,
+      "sadness": 0.62,
+      "joy": 0.12,
+      "anger": 0.0,
+      "fear": 0.18,
+      "disgust": 0.0,
+      "amazement": 0.0
+    },
+    "style": "sad",
+    "dominant_emotion": "sadness",
+    "strength": 0.62
+  },
+  "generation_status": {
+    "audio": "generated",
+    "bvh": "not_required"
+  }
+}

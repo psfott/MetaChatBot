@@ -4,13 +4,17 @@
   "speaker": "doctor",
   "text": "Those are very important concerns, and I'm glad you are asking directly. For this procedure, the overall complication rate is low, about two to three percent, and serious complications are under one percent. Most problems, when they occur, are manageable and temporary.",
   "semantic_emotion": {
-    "neutral": 0.6,
-    "joy": 0.25,
-    "sadness": 0.15,
+    "neutral": 0.08,
+    "amazement": 0.0,
     "anger": 0.0,
-    "fear": 0.0,
+    "cheekiness": 0.0,
     "disgust": 0.0,
-    "amazement": 0.0
+    "fear": 0.18,
+    "grief": 0.08,
+    "joy": 0.12,
+    "out_of_breath": 0.0,
+    "pain": 0.05,
+    "sadness": 0.62
   },
   "emotion_source": "heuristic",
   "condition": {
@@ -22,32 +26,40 @@
   "audio": "audio/medical/script1_007_doctor.wav",
   "bvh": "gesture/medical/script1_007_doctor.bvh",
   "azure": {
-    "style": "Default",
-    "degree": 0.6
+    "style": "sad",
+    "degree": 0.62
   },
   "face_control": {
     "enabled": true,
-    "ace_override_strength": 0.2,
+    "ace_override_strength": 0.85,
     "emotion": {
-      "neutral": 0.6,
-      "joy": 0.25,
-      "sadness": 0.15
+      "neutral": 0.08,
+      "amazement": 0.0,
+      "anger": 0.0,
+      "cheekiness": 0.0,
+      "disgust": 0.0,
+      "fear": 0.18,
+      "grief": 0.08,
+      "joy": 0.12,
+      "out_of_breath": 0.0,
+      "pain": 0.05,
+      "sadness": 0.62
     }
   },
   "gesture_control": {
     "enabled": false,
     "emotion": {
-      "neutral": 0.6,
-      "joy": 0.25,
-      "sadness": 0.15,
+      "neutral": 0.08,
+      "sadness": 0.62,
+      "joy": 0.12,
       "anger": 0.0,
-      "fear": 0.0,
+      "fear": 0.18,
       "disgust": 0.0,
       "amazement": 0.0
     },
-    "style": "neutral",
-    "dominant_emotion": "neutral",
-    "strength": 0.6
+    "style": "sad",
+    "dominant_emotion": "sadness",
+    "strength": 0.62
   },
   "generation_status": {
     "audio": "exists",

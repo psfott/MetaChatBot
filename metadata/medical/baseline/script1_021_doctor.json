@@ -4,13 +4,17 @@
   "speaker": "doctor",
   "text": "Good planning helps a lot. We will provide a pre-op checklist including medication adjustments, fasting timing, arrival instructions, and post-op home support. Please bring your medication list, complete pre-op tests on schedule, and arrange someone to accompany you after discharge.",
   "semantic_emotion": {
-    "neutral": 0.6,
-    "joy": 0.25,
-    "sadness": 0.15,
+    "neutral": 1.0,
+    "amazement": 0.0,
     "anger": 0.0,
-    "fear": 0.0,
+    "cheekiness": 0.0,
     "disgust": 0.0,
-    "amazement": 0.0
+    "fear": 0.0,
+    "grief": 0.0,
+    "joy": 0.0,
+    "out_of_breath": 0.0,
+    "pain": 0.0,
+    "sadness": 0.0
   },
   "emotion_source": "heuristic",
   "condition": {
@@ -23,31 +27,39 @@
   "bvh": "gesture/medical/script1_021_doctor.bvh",
   "azure": {
     "style": "Default",
-    "degree": 0.6
+    "degree": 0.7
   },
   "face_control": {
     "enabled": false,
     "ace_override_strength": 0.0,
     "emotion": {
-      "neutral": 0.6,
-      "joy": 0.25,
-      "sadness": 0.15
+      "neutral": 1.0,
+      "amazement": 0.0,
+      "anger": 0.0,
+      "cheekiness": 0.0,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "grief": 0.0,
+      "joy": 0.0,
+      "out_of_breath": 0.0,
+      "pain": 0.0,
+      "sadness": 0.0
     }
   },
   "gesture_control": {
     "enabled": false,
     "emotion": {
-      "neutral": 0.6,
-      "joy": 0.25,
-      "sadness": 0.15,
+      "neutral": 0.08510638297872342,
+      "sadness": 0.1276595744680851,
+      "joy": 0.7446808510638298,
       "anger": 0.0,
-      "fear": 0.0,
+      "fear": 0.04255319148936171,
       "disgust": 0.0,
       "amazement": 0.0
     },
-    "style": "neutral",
-    "dominant_emotion": "neutral",
-    "strength": 0.6
+    "style": "happy",
+    "dominant_emotion": "joy",
+    "strength": 0.745
   },
   "generation_status": {
     "audio": "exists",

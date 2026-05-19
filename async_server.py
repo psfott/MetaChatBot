@@ -1,4 +1,5 @@
 import asyncio
+import re
 from threading import Thread
 from time import sleep
 
@@ -17,7 +18,7 @@ class Server(Thread):
 
         self.condition = None
         self.done_index = None
-        self.speaking_flag = None
+        self.patient_released_index = None
         self.clients = []
         self.ip = ip
         self.port = port
@@ -37,10 +38,13 @@ class Server(Thread):
                 data_str = data.decode("utf-8")
                 print(f'Received from {addr}: {data_str}')
 
-                if "Speaking Flag" in data_str:
-                    self.speaking_flag = True
-                if "Cur index" in data_str:
-                    self.done_index = int(data_str.split(":")[-1])
+                cur_index_matches = re.findall(r"Cur index\s*:\s*(\d+)", data_str)
+                if cur_index_matches:
+                    self.done_index = int(cur_index_matches[-1])
+                patient_released_matches = re.findall(r"Patient released\s*:\s*(\d+)", data_str, re.IGNORECASE)
+                if patient_released_matches:
+                    self.patient_released_index = int(patient_released_matches[-1])
+                    print(f"Parsed patient_released_index={self.patient_released_index}")
                 if "Condition" in data_str:
                     self.condition = int(data_str.split(":")[-1])
                 if "Background" in data_str:

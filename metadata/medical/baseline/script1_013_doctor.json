@@ -4,13 +4,17 @@
   "speaker": "doctor",
   "text": "I understand that pressure. This is not an emergency today, but I would not delay for months. Waiting can increase pain and make treatment harder later. A safer plan is to schedule within the next four to six weeks and prepare work arrangements in advance.",
   "semantic_emotion": {
-    "neutral": 0.62,
-    "joy": 0.1,
-    "sadness": 0.28,
+    "neutral": 1.0,
+    "amazement": 0.0,
     "anger": 0.0,
-    "fear": 0.0,
+    "cheekiness": 0.0,
     "disgust": 0.0,
-    "amazement": 0.0
+    "fear": 0.0,
+    "grief": 0.0,
+    "joy": 0.0,
+    "out_of_breath": 0.0,
+    "pain": 0.0,
+    "sadness": 0.0
   },
   "emotion_source": "heuristic",
   "condition": {
@@ -23,30 +27,38 @@
   "bvh": "gesture/medical/script1_013_doctor.bvh",
   "azure": {
     "style": "Default",
-    "degree": 0.62
+    "degree": 0.7
   },
   "face_control": {
     "enabled": false,
     "ace_override_strength": 0.0,
     "emotion": {
-      "neutral": 0.62,
-      "joy": 0.1,
-      "sadness": 0.28
+      "neutral": 1.0,
+      "amazement": 0.0,
+      "anger": 0.0,
+      "cheekiness": 0.0,
+      "disgust": 0.0,
+      "fear": 0.0,
+      "grief": 0.0,
+      "joy": 0.0,
+      "out_of_breath": 0.0,
+      "pain": 0.0,
+      "sadness": 0.0
     }
   },
   "gesture_control": {
     "enabled": false,
     "emotion": {
-      "neutral": 0.62,
-      "joy": 0.1,
-      "sadness": 0.28,
+      "neutral": 0.08,
+      "sadness": 0.62,
+      "joy": 0.12,
       "anger": 0.0,
-      "fear": 0.0,
+      "fear": 0.18,
       "disgust": 0.0,
       "amazement": 0.0
     },
-    "style": "neutral",
-    "dominant_emotion": "neutral",
+    "style": "sad",
+    "dominant_emotion": "sadness",
     "strength": 0.62
   },
   "generation_status": {

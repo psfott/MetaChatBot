@@ -4,13 +4,17 @@
   "speaker": "doctor",
   "text": "Absolutely. We give preventive antibiotics, operate in a sterile setting, and provide clear wound-care instructions. At home, watch for fever, increasing redness, drainage, or worsening pain. If any of these appear, contact us immediately. We also schedule follow-up checks to catch issues early.",
   "semantic_emotion": {
-    "neutral": 0.62,
-    "joy": 0.1,
-    "sadness": 0.28,
+    "neutral": 0.08,
+    "amazement": 0.0,
     "anger": 0.0,
-    "fear": 0.0,
+    "cheekiness": 0.0,
     "disgust": 0.0,
-    "amazement": 0.0
+    "fear": 0.18,
+    "grief": 0.08,
+    "joy": 0.12,
+    "out_of_breath": 0.0,
+    "pain": 0.05,
+    "sadness": 0.62
   },
   "emotion_source": "heuristic",
   "condition": {
@@ -22,31 +26,39 @@
   "audio": "audio/medical/script1_015_doctor.wav",
   "bvh": "gesture/medical/script1_015_doctor.bvh",
   "azure": {
-    "style": "Default",
+    "style": "sad",
     "degree": 0.62
   },
   "face_control": {
     "enabled": true,
-    "ace_override_strength": 0.2,
+    "ace_override_strength": 0.85,
     "emotion": {
-      "neutral": 0.62,
-      "joy": 0.1,
-      "sadness": 0.28
+      "neutral": 0.08,
+      "amazement": 0.0,
+      "anger": 0.0,
+      "cheekiness": 0.0,
+      "disgust": 0.0,
+      "fear": 0.18,
+      "grief": 0.08,
+      "joy": 0.12,
+      "out_of_breath": 0.0,
+      "pain": 0.05,
+      "sadness": 0.62
     }
   },
   "gesture_control": {
     "enabled": false,
     "emotion": {
-      "neutral": 0.62,
-      "joy": 0.1,
-      "sadness": 0.28,
+      "neutral": 0.08,
+      "sadness": 0.62,
+      "joy": 0.12,
       "anger": 0.0,
-      "fear": 0.0,
+      "fear": 0.18,
       "disgust": 0.0,
       "amazement": 0.0
     },
-    "style": "neutral",
-    "dominant_emotion": "neutral",
+    "style": "sad",
+    "dominant_emotion": "sadness",
     "strength": 0.62
   },
   "generation_status": {

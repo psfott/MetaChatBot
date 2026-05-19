@@ -6,19 +6,20 @@ from global_data import reversed_azureSpeech_emotion_map, reversed_gesture_emoti
 
 EMOTION_ORDER = (
     "neutral",
-    "joy",
-    "sadness",
-    "anger",
-    "fear",
-    "disgust",
     "amazement",
+    "anger",
+    "cheekiness",
+    "disgust",
+    "fear",
+    "grief",
+    "joy",
+    "out_of_breath",
+    "pain",
+    "sadness",
 )
 
-CANONICAL_EMOTIONS = tuple(
-    name
-    for name in EMOTION_ORDER
-    if name in reversed_azureSpeech_emotion_map and name in reversed_gesture_emotion_map
-)
+ACE_EMOTION_KEYS = tuple(name for name in EMOTION_ORDER if name != "neutral")
+GESTURE_EMOTION_KEYS = tuple(reversed_gesture_emotion_map.keys())
 
 CONDITIONS = {
     "baseline": {"face": False, "gesture": False},
@@ -33,7 +34,7 @@ def clamp(value, lower, upper):
 
 
 def empty_emotion():
-    return {name: 0.0 for name in CANONICAL_EMOTIONS}
+    return {name: 0.0 for name in EMOTION_ORDER}
 
 
 def normalize_emotion(values):
@@ -52,22 +53,77 @@ def dominant_emotion(emotion):
 
 def default_doctor_emotion(text):
     lower = text.lower()
-    if any(token in lower for token in ("good news", "reassuring", "glad", "helps a lot")):
-        return normalize_emotion({"neutral": 0.6, "joy": 0.25, "sadness": 0.15})
-    if any(token in lower for token in ("risk", "complication", "progress", "pain", "infection")):
-        return normalize_emotion({"neutral": 0.62, "sadness": 0.28, "joy": 0.10})
-    return normalize_emotion({"neutral": 0.70, "sadness": 0.20, "joy": 0.10})
+    if any(token in lower for token in ("good news", "reassuring", "relief", "helps a lot")):
+        return {
+            **empty_emotion(),
+            "neutral": 0.08,
+            "joy": 0.7,
+            "sadness": 0.12,
+            "fear": 0.04,
+            "grief": 0.02,
+        }
+    if any(token in lower for token in ("risk", "complication", "progress", "pain", "infection", "urgent")):
+        return {
+            **empty_emotion(),
+            "neutral": 0.08,
+            "sadness": 0.62,
+            "fear": 0.18,
+            "grief": 0.08,
+            "pain": 0.05,
+            "joy": 0.12,
+        }
+    return {
+        **empty_emotion(),
+        "neutral": 0.08,
+        "sadness": 0.5,
+        "joy": 0.28,
+        "fear": 0.08,
+        "grief": 0.04,
+    }
 
 
 def default_semantic_emotion(speaker, text, index, total_items):
     if speaker == "doctor":
         return default_doctor_emotion(text)
-    return normalize_emotion({"neutral": 1.0})
+    return neutral_emotion()
 
 
 def classifier_semantic_emotion(emotion_classifier, text):
     raw_emotion = emotion_classifier.plain_classify(text)
-    return normalize_emotion(raw_emotion)
+    return ace_empathy_emotion(normalize_emotion(raw_emotion))
+
+
+def neutral_emotion():
+    emotion = empty_emotion()
+    emotion["neutral"] = 1.0
+    return emotion
+
+
+def ace_empathy_emotion(emotion):
+    output = empty_emotion()
+    for key in output:
+        output[key] = float(emotion.get(key, 0.0))
+    return output
+
+
+def condition_semantic_emotion(condition, base_emotion):
+    if not CONDITIONS[condition]["face"]:
+        return neutral_emotion()
+    return ace_empathy_emotion(base_emotion)
+
+
+def gesture_emotion_from_semantic(base_emotion):
+    gesture_emotion = {
+        key: float(base_emotion.get(key, 0.0))
+        for key in GESTURE_EMOTION_KEYS
+    }
+    total = sum(max(value, 0.0) for value in gesture_emotion.values())
+    if total <= 0:
+        return {"neutral": 1.0, **{key: 0.0 for key in GESTURE_EMOTION_KEYS if key != "neutral"}}
+    return {
+        key: max(value, 0.0) / total
+        for key, value in gesture_emotion.items()
+    }
 
 
 def semantic_emotion_for_turn(emotion_classifier, speaker, text, index, total_items):
@@ -86,14 +142,24 @@ def build_emotion_classifier(args):
 
 
 def azure_metadata(emotion):
-    name, strength = dominant_emotion(emotion)
+    candidates = {
+        key: value
+        for key, value in emotion.items()
+        if key in reversed_azureSpeech_emotion_map
+    }
+    name, strength = dominant_emotion(candidates or {"neutral": 1.0})
     style = reversed_azureSpeech_emotion_map.get(name, "Default")
     degree = clamp(strength, 0.2, 0.7)
     return {"style": style, "degree": round(degree, 3)}
 
 
 def gesture_metadata(emotion):
-    name, strength = dominant_emotion(emotion)
+    candidates = {
+        key: value
+        for key, value in emotion.items()
+        if key in reversed_gesture_emotion_map
+    }
+    name, strength = dominant_emotion(candidates or {"neutral": 1.0})
     style = reversed_gesture_emotion_map.get(name, "neutral")
     return {"style": style, "dominant_emotion": name, "strength": round(strength, 3)}
 
@@ -133,13 +199,14 @@ def build_doctor_item(
     flags = CONDITIONS[condition]
     speaker = "doctor"
     stem = output_stem(script_id, index, speaker)
-    semantic_emotion, emotion_source = semantic_emotion_for_turn(
+    base_emotion, emotion_source = semantic_emotion_for_turn(
         emotion_classifier,
         speaker,
         text,
         index,
         total_items,
     )
+    semantic_emotion = condition_semantic_emotion(condition, base_emotion)
 
     item = {
         "script_id": script_id,
@@ -157,8 +224,8 @@ def build_doctor_item(
 
     wav_path = audio_dir / f"{stem}.wav"
     bvh_path = gesture_dir / f"{stem}.bvh"
-    face_emotion = {key: semantic_emotion[key] for key in ("neutral", "joy", "sadness")}
-    gesture_emotion = semantic_emotion.copy()
+    face_emotion = semantic_emotion.copy()
+    gesture_emotion = gesture_emotion_from_semantic(base_emotion)
 
     item.update(
         {
@@ -168,7 +235,7 @@ def build_doctor_item(
             "azure": azure_metadata(semantic_emotion),
             "face_control": {
                 "enabled": flags["face"],
-                "ace_override_strength": 0.2 if flags["face"] else 0.0,
+                "ace_override_strength": 0.85 if flags["face"] else 0.0,
                 "emotion": face_emotion,
             },
             "gesture_control": {
@@ -269,6 +336,7 @@ def generate_metadata(args):
             manifest = {
                 "script_id": script_id,
                 "condition": condition,
+                "background": script_data.get(script_id, {}).get("background"),
                 "patient_role": "user",
                 "doctor_role": "avatar",
                 "emotion_source": "emotion_classifier" if emotion_classifier else "heuristic",
@@ -277,6 +345,8 @@ def generate_metadata(args):
                 "removed_patient_metadata_count": len(removed_patient_files),
                 "turns": turns,
             }
+            if manifest["background"] is None:
+                del manifest["background"]
             manifest_path = condition_metadata_dir / f"{script_id}_manifest.json"
             write_json(manifest_path, manifest)
             written_manifests.append(manifest_path)

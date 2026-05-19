@@ -1,0 +1,139 @@
+{
+  "script_id": "script2",
+  "condition": "gesture",
+  "background": {
+    "source": "Based on the experiment scenario for empathic nonverbal behavior in a virtual medical consultation.",
+    "clinical_context": "The patient has symptomatic gallstones with chronic gallbladder inflammation. The doctor recommends planned laparoscopic gallbladder removal because the condition is not an emergency today, but delaying too long may increase pain and complications.",
+    "patient_state": "The patient is anxious about surgery, anesthesia, recovery time, and whether the condition could be cancer.",
+    "experimental_goal": "A short medical dialogue for comparing virtual doctor conditions with or without empathic facial expression and gesture."
+  },
+  "patient_role": "user",
+  "doctor_role": "avatar",
+  "emotion_source": "heuristic",
+  "doctor_items": [
+    "metadata/medical/gesture/script2_001_doctor.json",
+    "metadata/medical/gesture/script2_003_doctor.json",
+    "metadata/medical/gesture/script2_005_doctor.json",
+    "metadata/medical/gesture/script2_007_doctor.json",
+    "metadata/medical/gesture/script2_009_doctor.json",
+    "metadata/medical/gesture/script2_011_doctor.json"
+  ],
+  "patient_metadata": "omitted_user_microphone_turns",
+  "removed_patient_metadata_count": 0,
+  "turns": [
+    {
+      "index": 1,
+      "speaker": "doctor",
+      "role_in_experiment": "avatar_doctor",
+      "metadata": "metadata/medical/gesture/script2_001_doctor.json",
+      "audio": "audio/medical/script2_001_doctor.wav",
+      "bvh": "gesture/medical/script2_001_doctor.bvh"
+    },
+    {
+      "script_id": "script2",
+      "index": 2,
+      "speaker": "patient",
+      "role_in_experiment": "user_patient",
+      "input": "local_microphone",
+      "expected_user_text": "Thank you, doctor. I have been very anxious. I keep having pain after meals, and I am worried this could be something serious.",
+      "metadata": null,
+      "audio": null,
+      "bvh": null
+    },
+    {
+      "index": 3,
+      "speaker": "doctor",
+      "role_in_experiment": "avatar_doctor",
+      "metadata": "metadata/medical/gesture/script2_003_doctor.json",
+      "audio": "audio/medical/script2_003_doctor.wav",
+      "bvh": "gesture/medical/script2_003_doctor.bvh"
+    },
+    {
+      "script_id": "script2",
+      "index": 4,
+      "speaker": "patient",
+      "role_in_experiment": "user_patient",
+      "input": "local_microphone",
+      "expected_user_text": "That is a relief, but surgery still scares me. I have never had general anesthesia, and I am worried about complications.",
+      "metadata": null,
+      "audio": null,
+      "bvh": null
+    },
+    {
+      "index": 5,
+      "speaker": "doctor",
+      "role_in_experiment": "avatar_doctor",
+      "metadata": "metadata/medical/gesture/script2_005_doctor.json",
+      "audio": "audio/medical/script2_005_doctor.wav",
+      "bvh": "gesture/medical/script2_005_doctor.bvh"
+    },
+    {
+      "script_id": "script2",
+      "index": 6,
+      "speaker": "patient",
+      "role_in_experiment": "user_patient",
+      "input": "local_microphone",
+      "expected_user_text": "That helps. What would recovery look like, and how much time should I plan away from work and family responsibilities?",
+      "metadata": null,
+      "audio": null,
+      "bvh": null
+    },
+    {
+      "index": 7,
+      "speaker": "doctor",
+      "role_in_experiment": "avatar_doctor",
+      "metadata": "metadata/medical/gesture/script2_007_doctor.json",
+      "audio": "audio/medical/script2_007_doctor.wav",
+      "bvh": "gesture/medical/script2_007_doctor.bvh"
+    },
+    {
+      "script_id": "script2",
+      "index": 8,
+      "speaker": "patient",
+      "role_in_experiment": "user_patient",
+      "input": "local_microphone",
+      "expected_user_text": "Could I wait until work is less busy, or would postponing it make things worse?",
+      "metadata": null,
+      "audio": null,
+      "bvh": null
+    },
+    {
+      "index": 9,
+      "speaker": "doctor",
+      "role_in_experiment": "avatar_doctor",
+      "metadata": "metadata/medical/gesture/script2_009_doctor.json",
+      "audio": "audio/medical/script2_009_doctor.wav",
+      "bvh": "gesture/medical/script2_009_doctor.bvh"
+    },
+    {
+      "script_id": "script2",
+      "index": 10,
+      "speaker": "patient",
+      "role_in_experiment": "user_patient",
+      "input": "local_microphone",
+      "expected_user_text": "I see. What should I watch for at home before surgery, and what should I prepare if I decide to proceed?",
+      "metadata": null,
+      "audio": null,
+      "bvh": null
+    },
+    {
+      "index": 11,
+      "speaker": "doctor",
+      "role_in_experiment": "avatar_doctor",
+      "metadata": "metadata/medical/gesture/script2_011_doctor.json",
+      "audio": "audio/medical/script2_011_doctor.wav",
+      "bvh": "gesture/medical/script2_011_doctor.bvh"
+    },
+    {
+      "script_id": "script2",
+      "index": 12,
+      "speaker": "patient",
+      "role_in_experiment": "user_patient",
+      "input": "local_microphone",
+      "expected_user_text": "Thank you. I still feel nervous, but I understand the situation better and can make a decision more calmly.",
+      "metadata": null,
+      "audio": null,
+      "bvh": null
+    }
+  ]
+}

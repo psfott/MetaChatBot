@@ -37,8 +37,8 @@ SPEECH2GESTURE_MODEL_PATH = os.path.join(BASE_PATH, "model")
 GESTURE_PATH = os.path.join(BASE_PATH, "gesture")
 LLM_PATH = "F:/Model/hub/llama.cpp/"
 
-AZURE_SPEECH_KEY = "f8a5185d42ec403b937de9469cb3b178"
-AZURE_SERVE_REGION = "eastasia"
+AZURE_SPEECH_KEY = os.environ.get("AZURE_SPEECH_KEY", "")
+AZURE_SERVE_REGION = os.environ.get("AZURE_SERVE_REGION", "southeastasia")
 
 # 根据实际位置修改
 AUDIO2FACE_PATH = "D:/Omniverse/pkg/deps/3757f0f707549e4cd2e0c789de84c010/"

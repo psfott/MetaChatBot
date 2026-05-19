@@ -4,13 +4,17 @@
   "speaker": "doctor",
   "text": "Hello, please have a seat. I'm Dr. Chen. I know waiting for results can be stressful, so today I will explain everything step by step, and I want you to stop me anytime if something is unclear.",
   "semantic_emotion": {
-    "neutral": 0.7,
-    "joy": 0.1,
-    "sadness": 0.2,
+    "neutral": 0.08,
+    "amazement": 0.0,
     "anger": 0.0,
-    "fear": 0.0,
+    "cheekiness": 0.0,
     "disgust": 0.0,
-    "amazement": 0.0
+    "fear": 0.08,
+    "grief": 0.04,
+    "joy": 0.28,
+    "out_of_breath": 0.0,
+    "pain": 0.0,
+    "sadness": 0.5
   },
   "emotion_source": "heuristic",
   "condition": {
@@ -22,35 +26,43 @@
   "audio": "audio/medical/script1_001_doctor.wav",
   "bvh": "gesture/medical/script1_001_doctor.bvh",
   "azure": {
-    "style": "Default",
-    "degree": 0.7
+    "style": "sad",
+    "degree": 0.5
   },
   "face_control": {
     "enabled": true,
-    "ace_override_strength": 0.2,
+    "ace_override_strength": 0.85,
     "emotion": {
-      "neutral": 0.7,
-      "joy": 0.1,
-      "sadness": 0.2
+      "neutral": 0.08,
+      "amazement": 0.0,
+      "anger": 0.0,
+      "cheekiness": 0.0,
+      "disgust": 0.0,
+      "fear": 0.08,
+      "grief": 0.04,
+      "joy": 0.28,
+      "out_of_breath": 0.0,
+      "pain": 0.0,
+      "sadness": 0.5
     }
   },
   "gesture_control": {
     "enabled": true,
     "emotion": {
-      "neutral": 0.7,
-      "joy": 0.1,
-      "sadness": 0.2,
+      "neutral": 0.08510638297872342,
+      "sadness": 0.5319148936170213,
+      "joy": 0.29787234042553196,
       "anger": 0.0,
-      "fear": 0.0,
+      "fear": 0.08510638297872342,
       "disgust": 0.0,
       "amazement": 0.0
     },
-    "style": "neutral",
-    "dominant_emotion": "neutral",
-    "strength": 0.7
+    "style": "sad",
+    "dominant_emotion": "sadness",
+    "strength": 0.532
   },
   "generation_status": {
     "audio": "exists",
-    "bvh": "pending"
+    "bvh": "exists"
   }
 }
