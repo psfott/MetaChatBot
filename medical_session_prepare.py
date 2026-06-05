@@ -229,6 +229,7 @@ def write_manifest(script_id, script_data, condition, metadata_dir, session_turn
                     "metadata": turn["metadata"],
                     "audio": turn["audio"],
                     "bvh": turn["bvh"],
+                    "ue_anim": turn["ue_anim"],
                 }
             )
             continue
@@ -301,6 +302,7 @@ def run(args):
                         "metadata": str(metadata_path).replace("\\", "/"),
                         "audio": str(audio_path).replace("\\", "/"),
                         "bvh": item["bvh"],
+                        "ue_anim": item["ue_anim"],
                         "semantic_emotion": item["semantic_emotion"],
                         "emotion_source": item["emotion_source"],
                     }

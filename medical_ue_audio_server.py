@@ -119,6 +119,59 @@ def build_ace_emotion_parameters(
     }
 
 
+def build_gesture_payload(item, args):
+    # Gesture pipeline, UE playback stage:
+    # 1. speech2gesture writes one BVH path per doctor turn.
+    # 2. UE imports/retargets those BVHs offline into MetaHuman AnimSequences.
+    # 3. This server prefers the retargeted ue_anim asset path for stable playback.
+    # 4. UE plays the AnimSequence with the doctor wav, then returns to sitting idle.
+    gesture_control = item.get("gesture_control", {})
+    condition = item.get("condition", {})
+    gesture_enabled = (
+        args.gesture_mode == "auto"
+        and bool(condition.get("doctor_gesture_enabled", False))
+        and bool(gesture_control.get("enabled", False))
+    )
+    ue_anim = item.get("ue_anim")
+    bvh_value = item.get("bvh")
+    if not gesture_enabled:
+        return {
+            "enabled": False,
+            "requested": gesture_enabled,
+        }
+
+    bvh_payload = {}
+    if bvh_value:
+        bvh_path = Path(bvh_value).resolve()
+        bvh_payload = {
+            "bvh_path": str(bvh_path).replace("\\", "/"),
+            "bvh_uri": bvh_path.as_uri(),
+            "bvh_exists": bvh_path.exists(),
+        }
+
+    payload = {
+        "enabled": bool(ue_anim or bvh_value),
+        "requested": True,
+        "source": "ue_anim" if ue_anim else "bvh",
+        "style": gesture_control.get("style", "neutral"),
+        "dominant_emotion": gesture_control.get("dominant_emotion", "neutral"),
+        "strength": gesture_control.get("strength", 0.0),
+        "emotion": gesture_control.get("emotion", {}),
+        "playback": {
+            "sync_with_audio": True,
+            "start_on_doctor_audio": True,
+            "return_to_sitting_idle_on_audio_end": True,
+        },
+    }
+    if ue_anim:
+        payload["ue_anim"] = ue_anim
+        payload["ue_asset_path"] = ue_anim
+    if not ue_anim and bvh_value:
+        payload["importer"] = "BVHPlugin.ImportBVH"
+    payload.update(bvh_payload)
+    return payload
+
+
 def audio_message(item, metadata_path, args):
     audio_path = Path(item["audio"]).resolve()
     semantic_emotion = item.get("semantic_emotion", {"neutral": 1.0})
@@ -163,7 +216,7 @@ def audio_message(item, metadata_path, args):
             "emotion_parameters": ace_emotion_parameters,
         },
         "gesture": {
-            "enabled": False,
+            **build_gesture_payload(item, args),
         },
     }
 
@@ -321,6 +374,7 @@ def parse_args():
     parser.add_argument("--port", type=int, default=8012)
     parser.add_argument("--connect-timeout", type=float, default=None)
     parser.add_argument("--expression-mode", choices=["neutral", "emotional"], default="neutral")
+    parser.add_argument("--gesture-mode", choices=["auto", "off"], default="auto")
     parser.add_argument("--max-expression-strength", type=float, default=1.0)
     parser.add_argument("--ace-overall-emotion-strength", type=float, default=0.95)
     parser.add_argument("--ace-emotion-override-strength", type=float, default=1.0)

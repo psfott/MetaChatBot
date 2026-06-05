@@ -27,7 +27,8 @@
       "role_in_experiment": "avatar_doctor",
       "metadata": "metadata/medical/gesture/script2_001_doctor.json",
       "audio": "audio/medical/script2_001_doctor.wav",
-      "bvh": "gesture/medical/script2_001_doctor.bvh"
+      "bvh": "gesture/medical/script2_001_doctor.bvh",
+      "ue_anim": "/Game/MetaHumans/NVB_female/Animations/Retargeted/RTG_script2_001_doctor_NVB.RTG_script2_001_doctor_NVB"
     },
     {
       "script_id": "script2",
@@ -46,7 +47,8 @@
       "role_in_experiment": "avatar_doctor",
       "metadata": "metadata/medical/gesture/script2_003_doctor.json",
       "audio": "audio/medical/script2_003_doctor.wav",
-      "bvh": "gesture/medical/script2_003_doctor.bvh"
+      "bvh": "gesture/medical/script2_003_doctor.bvh",
+      "ue_anim": "/Game/MetaHumans/NVB_female/Animations/Retargeted/RTG_script2_003_doctor_NVB.RTG_script2_003_doctor_NVB"
     },
     {
       "script_id": "script2",
@@ -65,7 +67,8 @@
       "role_in_experiment": "avatar_doctor",
       "metadata": "metadata/medical/gesture/script2_005_doctor.json",
       "audio": "audio/medical/script2_005_doctor.wav",
-      "bvh": "gesture/medical/script2_005_doctor.bvh"
+      "bvh": "gesture/medical/script2_005_doctor.bvh",
+      "ue_anim": "/Game/MetaHumans/NVB_female/Animations/Retargeted/RTG_script2_005_doctor_NVB.RTG_script2_005_doctor_NVB"
     },
     {
       "script_id": "script2",
@@ -84,7 +87,8 @@
       "role_in_experiment": "avatar_doctor",
       "metadata": "metadata/medical/gesture/script2_007_doctor.json",
       "audio": "audio/medical/script2_007_doctor.wav",
-      "bvh": "gesture/medical/script2_007_doctor.bvh"
+      "bvh": "gesture/medical/script2_007_doctor.bvh",
+      "ue_anim": "/Game/MetaHumans/NVB_female/Animations/Retargeted/RTG_script2_007_doctor_NVB.RTG_script2_007_doctor_NVB"
     },
     {
       "script_id": "script2",
@@ -103,7 +107,8 @@
       "role_in_experiment": "avatar_doctor",
       "metadata": "metadata/medical/gesture/script2_009_doctor.json",
       "audio": "audio/medical/script2_009_doctor.wav",
-      "bvh": "gesture/medical/script2_009_doctor.bvh"
+      "bvh": "gesture/medical/script2_009_doctor.bvh",
+      "ue_anim": "/Game/MetaHumans/NVB_female/Animations/Retargeted/RTG_script2_009_doctor_NVB.RTG_script2_009_doctor_NVB"
     },
     {
       "script_id": "script2",
@@ -122,7 +127,8 @@
       "role_in_experiment": "avatar_doctor",
       "metadata": "metadata/medical/gesture/script2_011_doctor.json",
       "audio": "audio/medical/script2_011_doctor.wav",
-      "bvh": "gesture/medical/script2_011_doctor.bvh"
+      "bvh": "gesture/medical/script2_011_doctor.bvh",
+      "ue_anim": "/Game/MetaHumans/NVB_female/Animations/Retargeted/RTG_script2_011_doctor_NVB.RTG_script2_011_doctor_NVB"
     },
     {
       "script_id": "script2",

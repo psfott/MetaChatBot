@@ -28,6 +28,10 @@ CONDITIONS = {
     "full": {"face": True, "gesture": True},
 }
 
+UE_RETARGETED_ANIM_DIR = "/Game/MetaHumans/NVB_female/Animations/Retargeted"
+UE_RETARGETED_ANIM_PREFIX = "RTG_"
+UE_RETARGETED_ANIM_SUFFIX = "_NVB"
+
 
 def clamp(value, lower, upper):
     return max(lower, min(upper, value))
@@ -186,6 +190,11 @@ def output_stem(script_id, index, speaker):
     return f"{script_id}_{index:03d}_{speaker}"
 
 
+def ue_retargeted_anim_path(stem):
+    asset_name = f"{UE_RETARGETED_ANIM_PREFIX}{stem}{UE_RETARGETED_ANIM_SUFFIX}"
+    return f"{UE_RETARGETED_ANIM_DIR}/{asset_name}.{asset_name}"
+
+
 def build_doctor_item(
     script_id,
     index,
@@ -227,11 +236,16 @@ def build_doctor_item(
     face_emotion = semantic_emotion.copy()
     gesture_emotion = gesture_emotion_from_semantic(base_emotion)
 
+    # Gesture pipeline, prepare stage:
+    # 1. Each doctor turn reserves one local BVH path for speech2gesture generation.
+    # 2. UE imports that BVH offline to LaForge, then retargets it to NVB_female.
+    # 3. The final playback payload prefers ue_anim, avoiding runtime BVH import.
     item.update(
         {
             "role_in_experiment": "avatar_doctor",
             "audio": str(wav_path).replace("\\", "/"),
             "bvh": str(bvh_path).replace("\\", "/"),
+            "ue_anim": ue_retargeted_anim_path(stem),
             "azure": azure_metadata(semantic_emotion),
             "face_control": {
                 "enabled": flags["face"],
@@ -326,6 +340,7 @@ def generate_metadata(args):
                             "metadata": item_path_text,
                             "audio": item["audio"],
                             "bvh": item["bvh"],
+                            "ue_anim": item["ue_anim"],
                         }
                     )
                 elif speaker == "patient":

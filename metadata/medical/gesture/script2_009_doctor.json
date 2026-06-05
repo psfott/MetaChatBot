@@ -25,6 +25,7 @@
   "role_in_experiment": "avatar_doctor",
   "audio": "audio/medical/script2_009_doctor.wav",
   "bvh": "gesture/medical/script2_009_doctor.bvh",
+  "ue_anim": "/Game/MetaHumans/NVB_female/Animations/Retargeted/RTG_script2_009_doctor_NVB.RTG_script2_009_doctor_NVB",
   "azure": {
     "style": "Default",
     "degree": 0.7
@@ -62,7 +63,7 @@
     "strength": 0.62
   },
   "generation_status": {
-    "audio": "pending",
-    "bvh": "pending"
+    "audio": "exists",
+    "bvh": "exists"
   }
 }
