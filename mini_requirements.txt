@@ -1,0 +1,24 @@
+# Minimal dependencies for the medical experiment pipeline.
+#
+# Covers:
+# - medical_ue_audio_server.py
+# - medical_session_prepare.py
+# - medical_gesture_prepare.py
+# - azure_speech.py
+# - emotion_classifier.py
+# - speech2gesture inference helpers used by medical_gesture_prepare.py
+#
+# UE automation scripts under tools/ue_*.py run inside Unreal Editor Python.
+# Do not install an "unreal" pip package for those scripts.
+
+azure-cognitiveservices-speech>=1.37.0
+numpy>=1.24,<2.0
+scipy>=1.10
+soundfile>=0.12
+librosa>=0.10
+scikit-learn>=1.3
+tqdm>=4.66
+
+# Required only when generating BVH with the speech2gesture model.
+# Install the CUDA/CPU build that matches your machine if pip's default is not right.
+torch>=2.0
